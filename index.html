@@ -13,203 +13,223 @@
     font-size: 16px;
     line-height: 1.7;
     color: #222;
-    background: #ffffff;
+    background: #f8f8f8;
   }
-  a { color: #ea580c; }
-  a:hover { color: #bb4609; }
+  a { color: #9a3412; text-decoration: none; }
+  a:hover { text-decoration: underline; color: #7b290e; }
 
-  /* Top bar */
+  /* ── Top bar ── */
   .topbar {
-    background: #ea580c;
+    background: #9a3412;
     color: #fff;
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 52px;
+    padding: 0 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+  .topbar-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
   }
   .topbar-brand {
     font-size: 1.15rem;
     font-weight: 700;
-    letter-spacing: 0.02em;
-    text-decoration: none;
     color: #fff;
+    letter-spacing: 0.01em;
   }
-  .topbar-tagline {
-    font-size: 0.8rem;
-    opacity: 0.85;
+  .topbar-nav {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+  .topbar-nav a {
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .topbar-nav a:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+  @media(max-width:600px) {
+    .topbar-nav { display: none; }
   }
 
-  /* Layout wrapper */
-  .page-wrap {
-    max-width: 860px;
+  /* ── Breadcrumb ── */
+  .breadcrumb {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .breadcrumb-inner {
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 32px 16px 64px;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    color: #6b7280;
+  }
+  .breadcrumb-inner a { color: #9a3412; }
+  .breadcrumb-inner span { margin: 0 5px; }
+
+  /* ── Layout wrapper ── */
+  .page-wrap {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 20px 64px;
     display: grid;
     grid-template-columns: 1fr 280px;
-    gap: 32px;
+    gap: 28px;
     align-items: start;
   }
-  @media (max-width: 680px) {
+  @media (max-width: 700px) {
     .page-wrap { grid-template-columns: 1fr; }
     .sidebar { display: none; }
   }
 
-  /* Main */
+  /* ── Main ── */
+  .main-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px 28px 32px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
   .main-content h1 {
-    font-size: 1.8rem;
-    color: #bb4609;
-    margin-bottom: 8px;
+    font-size: 1.75rem;
+    color: #7b290e;
+    margin-bottom: 10px;
     line-height: 1.3;
+    border-bottom: 3px solid #9a3412;
+    padding-bottom: 12px;
   }
   .main-content .intro {
     color: #555;
     margin-bottom: 28px;
-    font-size: 1.05rem;
-  }
-
-  /* Sidebar */
-  .sidebar {
-    position: sticky;
-    top: 68px;
-  }
-  .sidebar-widget {
-    background: #ea580c;
-    border-radius: 10px;
-    padding: 24px 20px;
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  }
-  .sidebar-widget h3 {
     font-size: 1rem;
-    margin-bottom: 10px;
-    font-weight: 700;
   }
-  .sidebar-widget p {
-    font-size: 0.88rem;
-    margin-bottom: 14px;
-    opacity: 0.9;
-  }
-  .sidebar-widget input[type="email"] {
-    width: 100%;
-    padding: 10px 12px;
-    border: none;
+  .article-card {
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #9a3412;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 6px;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    outline: none;
+    background: #fafafa;
+    transition: box-shadow 0.2s;
   }
-  .sidebar-widget button {
-    width: 100%;
-    padding: 10px;
-    background: #fff;
-    color: #ea580c;
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: opacity 0.2s;
-  }
-  .sidebar-widget button:hover { opacity: 0.9; }
-  .sidebar-widget .disclaimer {
-    font-size: 0.72rem;
-    opacity: 0.7;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  /* About box */
-  .about-box {
-    margin-top: 20px;
-    background: #f4f4f4;
-    border-radius: 8px;
-    padding: 18px 16px;
-    font-size: 0.9rem;
-    color: #444;
-    line-height: 1.6;
-  }
-  .about-box strong { color: #bb4609; }
-
-  /* Footer */
-  .footer {
-    background: #bb4609;
-    color: rgba(255,255,255,0.8);
-    text-align: center;
-    padding: 20px 16px;
-    font-size: 0.82rem;
-    margin-top: 64px;
-  }
-  .footer a { color: rgba(255,255,255,0.9); }
-
-  /* Floating widget */
-  #float-widget {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    z-index: 999;
-    width: 300px;
-    background: #f97316;
-    border-radius: 12px;
-    padding: 20px 18px 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    color: #fff;
-    transition: transform 0.3s ease;
-  }
-  #float-widget.hidden { transform: translateY(200%); }
-  #float-widget h4 {
-    font-size: 0.95rem;
-    font-weight: 700;
+  .article-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+  .article-card h2 {
+    font-size: 1.1rem;
     margin-bottom: 6px;
   }
-  #float-widget p {
-    font-size: 0.8rem;
-    margin-bottom: 12px;
-    opacity: 0.9;
-  }
-  #float-widget input[type="email"] {
-    width: 100%;
-    padding: 9px 10px;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    margin-bottom: 8px;
-    outline: none;
-  }
-  #float-widget .float-row {
+  .article-card h2 a { color: #7b290e; }
+  .article-card .meta { color: #9ca3af; font-size: 0.8rem; margin-bottom: 6px; }
+  .article-card p { color: #555; font-size: 0.93rem; margin: 0; }
+
+  /* ── Categories ── */
+  .categories {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 24px;
   }
-  #float-widget button.submit-btn {
-    flex: 1;
-    padding: 9px;
-    background: #fff;
-    color: #f97316;
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 0.85rem;
-    cursor: pointer;
-  }
-  #float-widget button.close-btn {
-    background: rgba(255,255,255,0.25);
+  .cat-tag {
+    background: #9a3412;
     color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 9px 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar { position: sticky; top: 70px; }
+  .sidebar-widget {
+    background: #9a3412;
+    border-radius: 10px;
+    padding: 22px 18px;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+    margin-bottom: 20px;
+  }
+  .sidebar-widget h3 { font-size: 1rem; margin-bottom: 8px; font-weight: 700; }
+  .sidebar-widget p { font-size: 0.86rem; margin-bottom: 12px; opacity: 0.9; }
+  .sidebar-widget input[type="email"] {
+    width: 100%; padding: 9px 11px; border: none; border-radius: 5px;
+    font-size: 0.88rem; margin-bottom: 8px; outline: none;
+  }
+  .sidebar-widget button {
+    width: 100%; padding: 10px; background: #fff; color: #9a3412;
+    border: none; border-radius: 5px; font-weight: 700; font-size: 0.88rem;
     cursor: pointer;
+  }
+  .sidebar-widget .disclaimer {
+    font-size: 0.7rem; opacity: 0.65; margin-top: 8px; text-align: center;
+  }
+  .sidebar-about {
+    background: #fff; border-radius: 8px; padding: 18px 16px;
+    font-size: 0.88rem; color: #444; line-height: 1.6;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    margin-bottom: 20px;
+  }
+  .sidebar-about strong { color: #7b290e; display: block; margin-bottom: 6px; font-size: 0.95rem; }
+  .sidebar-links {
+    background: #fff; border-radius: 8px; padding: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .sidebar-links h4 { font-size: 0.9rem; color: #7b290e; margin-bottom: 10px; }
+  .sidebar-links ul { list-style: none; }
+  .sidebar-links li { padding: 4px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.86rem; }
+  .sidebar-links li:last-child { border: none; }
+  .sidebar-links a { color: #9a3412; }
+
+  /* ── Footer ── */
+  .footer {
+    background: #7b290e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+  .footer-nav { margin-bottom: 8px; }
+  .footer-nav a {
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
     font-size: 0.85rem;
   }
-  #float-widget .disclaimer {
-    font-size: 0.7rem;
-    opacity: 0.7;
-    margin-top: 8px;
-    text-align: center;
+
+  /* ── Floating widget ── */
+  #float-widget {
+    position: fixed; bottom: 24px; right: 24px; z-index: 999;
+    width: 290px; background: #c2410c; border-radius: 12px;
+    padding: 18px 16px 14px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.22);
+    color: #fff; transition: transform 0.3s ease;
   }
+  #float-widget.hidden { transform: translateY(220%); pointer-events: none; }
+  #float-widget h4 { font-size: 0.93rem; font-weight: 700; margin-bottom: 5px; }
+  #float-widget p { font-size: 0.78rem; margin-bottom: 10px; opacity: 0.9; }
+  #float-widget input[type="email"] {
+    width: 100%; padding: 8px 10px; border: none; border-radius: 5px;
+    font-size: 0.84rem; margin-bottom: 8px; outline: none;
+  }
+  #float-widget .float-row { display: flex; gap: 7px; }
+  #float-widget .submit-btn {
+    flex: 1; padding: 8px; background: #fff; color: #c2410c;
+    border: none; border-radius: 5px; font-weight: 700; font-size: 0.84rem; cursor: pointer;
+  }
+  #float-widget .close-btn {
+    background: rgba(255,255,255,0.2); color: #fff; border: none;
+    border-radius: 5px; padding: 8px 11px; cursor: pointer; font-size: 0.84rem;
+  }
+  #float-widget .disclaimer { font-size: 0.68rem; opacity: 0.65; margin-top: 7px; text-align: center; }
   @media (max-width: 400px) {
     #float-widget { width: calc(100vw - 32px); right: 16px; }
   }
@@ -218,10 +238,28 @@
 <body>
 
 <!-- TOP BAR -->
-<nav class="topbar">
-  <a class="topbar-brand" href="/">Dachshund Guide</a>
-  <span class="topbar-tagline">Care &bull; Facts &bull; National Day</span>
-</nav>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="/">Dachshund Guide</a>
+    <nav>
+      <ul class="topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/national-day.html">National Day</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span> Dachshund Guide
+  </div>
+</div>
 
 <!-- PAGE LAYOUT -->
 <div class="page-wrap">
@@ -229,12 +267,19 @@
   <!-- MAIN CONTENT -->
   <main class="main-content">
     <h1>Everything About Dachshunds</h1>
-    <p class="intro">Your complete resource for Dachshund lovers — breed facts, health tips, training advice, and national day celebration ideas.</p>
+    <p class="intro">Your complete resource for Dachshund lovers — breed facts, health tips, training advice, and national day ideas.</p>
 
-    <!-- ARTICLES -->
+    <div class="categories">
+      <span class="cat-tag">Care Tips</span>
+      <span class="cat-tag">Breed Facts</span>
+      <span class="cat-tag">National Day</span>
+      <span class="cat-tag">Health</span>
+      <span class="cat-tag">Training</span>
+    </div>
+
     
-        <article style="background:#f9f9f9; border-left:4px solid #ea580c; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem; color:#bb4609;">Coming soon — Dachshund articles</h2>
+        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
+            <h2 style="margin-top:0; font-size:1.2rem; color:#7b290e;">Coming soon — Dachshund articles</h2>
             <p style="color:#555; margin:0;">We are preparing comprehensive guides about Dachshunds.
             Subscribe below to be the first to know when new articles are published.</p>
         </article>
@@ -245,7 +290,7 @@
   <aside class="sidebar">
     <div class="sidebar-widget">
       <h3>Get Dachshund Tips</h3>
-      <p>Join Dachshund owners getting weekly care tips, health guides and breed news.</p>
+      <p>Weekly care guides, health tips and breed news for Dachshund owners.</p>
       <form onsubmit="return handleSidebarSubmit(event);" action="#" method="post">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit">Subscribe Free</button>
@@ -253,69 +298,72 @@
       <p class="disclaimer">No spam. Unsubscribe anytime.</p>
     </div>
 
-    <div class="about-box">
-      <strong>About This Site</strong><br>
-      Dedicated to <strong>Dachshund</strong> owners and enthusiasts. We publish in-depth guides, care tips, and celebrate every national dog day.
+    <div class="sidebar-about">
+      <strong>About Dachshund Guide</strong>
+      Dedicated to Dachshund owners and enthusiasts. In-depth guides, care tips, and national dog day coverage.
+    </div>
+
+    <div class="sidebar-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/national-day.html">National Dachshund Day</a></li>
+        <li><a href="/care.html">Dachshund Care Guide</a></li>
+        <li><a href="/health.html">Health &amp; Vet Tips</a></li>
+        <li><a href="/training.html">Training Basics</a></li>
+        <li><a href="/about.html">About Us</a></li>
+      </ul>
     </div>
   </aside>
 
-</div><!-- /page-wrap -->
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>&copy; 2025 dachshund-world.github.io &mdash; Dachshund Guide</p>
-  <p style="margin-top:6px;"><a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a></p>
+  <div class="footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+  </div>
+  <p>&copy; 2025 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
 </footer>
 
 <!-- FLOATING WIDGET -->
-<div id="float-widget">
-  <h4>Love Dachshunds?</h4>
-  <p>Get free weekly breed tips straight to your inbox.</p>
+<div id="float-widget" class="hidden">
+  <h4>Love Dachshunds? 🐾</h4>
+  <p>Get free weekly breed tips in your inbox.</p>
   <input type="email" id="float-email" placeholder="your@email.com">
   <div class="float-row">
     <button class="submit-btn" onclick="handleFloatSubmit()">Get Tips</button>
-    <button class="close-btn" onclick="closeWidget()">&#x2715;</button>
+    <button class="close-btn" onclick="closeWidget()">✕</button>
   </div>
   <p class="disclaimer">No spam. Unsubscribe anytime.</p>
 </div>
 
 <script>
-  // Show floating widget after 8 seconds
   setTimeout(function() {
-    var w = document.getElementById('float-widget');
-    if (w) w.classList.remove('hidden');
-  }, 8000);
-  document.getElementById('float-widget').classList.add('hidden');
-
+    if (!sessionStorage.getItem('fw_closed')) {
+      document.getElementById('float-widget').classList.remove('hidden');
+    }
+  }, 9000);
   function closeWidget() {
     document.getElementById('float-widget').classList.add('hidden');
     try { sessionStorage.setItem('fw_closed', '1'); } catch(e) {}
   }
-
   function handleFloatSubmit() {
     var em = document.getElementById('float-email').value;
     if (!em || !em.includes('@')) { alert('Please enter a valid email.'); return; }
-    closeWidget();
-    // TODO: wire up to email provider (Mailchimp, ConvertKit, etc.)
+    document.querySelector('#float-widget .submit-btn').textContent = 'Thanks!';
+    setTimeout(closeWidget, 1500);
   }
-
   function handleSidebarSubmit(e) {
     e.preventDefault();
-    var form = e.target;
-    var em = form.querySelector('input[type=email]').value;
-    if (!em || !em.includes('@')) return false;
-    form.querySelector('button').textContent = 'Thanks!';
-    // TODO: wire up to email provider
+    var btn = e.target.querySelector('button');
+    btn.textContent = 'Thanks! ✓';
+    btn.style.background = '#e8f5e9';
     return false;
   }
-
-  // Don't show widget if user already closed it this session
-  try {
-    if (sessionStorage.getItem('fw_closed')) {
-      document.getElementById('float-widget').classList.add('hidden');
-    }
-  } catch(e) {}
 </script>
-
 </body>
 </html>
