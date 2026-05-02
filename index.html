@@ -205,33 +205,10 @@
     font-size: 0.85rem;
   }
 
-  /* ── Floating widget ── */
-  #float-widget {
-    position: fixed; bottom: 24px; right: 24px; z-index: 999;
-    width: 290px; background: #c2410c; border-radius: 12px;
-    padding: 18px 16px 14px;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.22);
-    color: #fff; transition: transform 0.3s ease;
-  }
-  #float-widget.hidden { transform: translateY(220%); pointer-events: none; }
-  #float-widget h4 { font-size: 0.93rem; font-weight: 700; margin-bottom: 5px; }
-  #float-widget p { font-size: 0.78rem; margin-bottom: 10px; opacity: 0.9; }
-  #float-widget input[type="email"] {
-    width: 100%; padding: 8px 10px; border: none; border-radius: 5px;
-    font-size: 0.84rem; margin-bottom: 8px; outline: none;
-  }
-  #float-widget .float-row { display: flex; gap: 7px; }
-  #float-widget .submit-btn {
-    flex: 1; padding: 8px; background: #fff; color: #c2410c;
-    border: none; border-radius: 5px; font-weight: 700; font-size: 0.84rem; cursor: pointer;
-  }
-  #float-widget .close-btn {
-    background: rgba(255,255,255,0.2); color: #fff; border: none;
-    border-radius: 5px; padding: 8px 11px; cursor: pointer; font-size: 0.84rem;
-  }
-  #float-widget .disclaimer { font-size: 0.68rem; opacity: 0.65; margin-top: 7px; text-align: center; }
-  @media (max-width: 400px) {
-    #float-widget { width: calc(100vw - 32px); right: 16px; }
+  /* ── Bottom mobile bar (wariant bottom_mobile) ── */
+  #bottom-bar input[type="email"] { flex: 1; min-width: 0; }
+  @media (max-width: 480px) {
+    #bottom-bar span { display: none; }
   }
 </style>
 </head>
@@ -246,13 +223,13 @@
         <li><a href="/">Home</a></li>
         <li><a href="/blog.html">Blog</a></li>
         <li><a href="/care.html">Care</a></li>
-        <li><a href="/national-day.html">National Day</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
+
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
@@ -272,7 +249,6 @@
     <div class="categories">
       <span class="cat-tag">Care Tips</span>
       <span class="cat-tag">Breed Facts</span>
-      <span class="cat-tag">National Day</span>
       <span class="cat-tag">Health</span>
       <span class="cat-tag">Training</span>
     </div>
@@ -284,10 +260,12 @@
             Subscribe below to be the first to know when new articles are published.</p>
         </article>
 
+    
   </main>
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
+    
     <div class="sidebar-widget">
       <h3>Get Dachshund Tips</h3>
       <p>Weekly care guides, health tips and breed news for Dachshund owners.</p>
@@ -326,42 +304,36 @@
     <a href="/contact.html">Contact</a>
     <a href="/privacy.html">Privacy</a>
   </div>
-  <p>&copy; 2025 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
+  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
 </footer>
 
-<!-- FLOATING WIDGET -->
-<div id="float-widget" class="hidden">
-  <h4>Love Dachshunds? 🐾</h4>
-  <p>Get free weekly breed tips in your inbox.</p>
-  <input type="email" id="float-email" placeholder="your@email.com">
-  <div class="float-row">
-    <button class="submit-btn" onclick="handleFloatSubmit()">Get Tips</button>
-    <button class="close-btn" onclick="closeWidget()">✕</button>
-  </div>
-  <p class="disclaimer">No spam. Unsubscribe anytime.</p>
-</div>
+
 
 <script>
-  setTimeout(function() {
-    if (!sessionStorage.getItem('fw_closed')) {
-      document.getElementById('float-widget').classList.remove('hidden');
-    }
-  }, 9000);
-  function closeWidget() {
-    document.getElementById('float-widget').classList.add('hidden');
-    try { sessionStorage.setItem('fw_closed', '1'); } catch(e) {}
-  }
-  function handleFloatSubmit() {
-    var em = document.getElementById('float-email').value;
-    if (!em || !em.includes('@')) { alert('Please enter a valid email.'); return; }
-    document.querySelector('#float-widget .submit-btn').textContent = 'Thanks!';
-    setTimeout(closeWidget, 1500);
-  }
   function handleSidebarSubmit(e) {
     e.preventDefault();
     var btn = e.target.querySelector('button');
     btn.textContent = 'Thanks! ✓';
-    btn.style.background = '#e8f5e9';
+    return false;
+  }
+  function handleBannerSubmit() {
+    var em = document.getElementById('banner-email');
+    if (!em || !em.value.includes('@')) return;
+    em.value = '';
+    em.placeholder = 'Thanks! ✓';
+    em.disabled = true;
+  }
+  function handleBottomSubmit() {
+    var em = document.getElementById('bottom-email');
+    if (!em || !em.value.includes('@')) return;
+    em.value = '';
+    em.placeholder = 'Thanks! ✓';
+    em.disabled = true;
+  }
+  function handleEmbedSubmit(e) {
+    e.preventDefault();
+    var btn = e.target.querySelector('button');
+    btn.textContent = 'Thanks! ✓';
     return false;
   }
 </script>
