@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dachshund Guide — Care, Facts &amp; National Day</title>
+<meta name="description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta name="robots" content="index, follow">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Courier New', 'Lucida Console', monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #222;
+    background: #ffffff;
+  }
+  a { color: #ea580c; }
+  a:hover { color: #bb4609; }
+
+  /* Top bar */
+  .topbar {
+    background: #ea580c;
+    color: #fff;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .topbar-brand {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .topbar-tagline {
+    font-size: 0.8rem;
+    opacity: 0.85;
+  }
+
+  /* Layout wrapper */
+  .page-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 32px;
+    align-items: start;
+  }
+  @media (max-width: 680px) {
+    .page-wrap { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+  }
+
+  /* Main */
+  .main-content h1 {
+    font-size: 1.8rem;
+    color: #bb4609;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .main-content .intro {
+    color: #555;
+    margin-bottom: 28px;
+    font-size: 1.05rem;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 68px;
+  }
+  .sidebar-widget {
+    background: #ea580c;
+    border-radius: 10px;
+    padding: 24px 20px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  .sidebar-widget h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .sidebar-widget p {
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+    opacity: 0.9;
+  }
+  .sidebar-widget input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    outline: none;
+  }
+  .sidebar-widget button {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    color: #ea580c;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .sidebar-widget button:hover { opacity: 0.9; }
+  .sidebar-widget .disclaimer {
+    font-size: 0.72rem;
+    opacity: 0.7;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* About box */
+  .about-box {
+    margin-top: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 18px 16px;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  .about-box strong { color: #bb4609; }
+
+  /* Footer */
+  .footer {
+    background: #bb4609;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 0.82rem;
+    margin-top: 64px;
+  }
+  .footer a { color: rgba(255,255,255,0.9); }
+
+  /* Floating widget */
+  #float-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    width: 300px;
+    background: #f97316;
+    border-radius: 12px;
+    padding: 20px 18px 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  #float-widget.hidden { transform: translateY(200%); }
+  #float-widget h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  #float-widget p {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    opacity: 0.9;
+  }
+  #float-widget input[type="email"] {
+    width: 100%;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    outline: none;
+  }
+  #float-widget .float-row {
+    display: flex;
+    gap: 8px;
+  }
+  #float-widget button.submit-btn {
+    flex: 1;
+    padding: 9px;
+    background: #fff;
+    color: #f97316;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  #float-widget button.close-btn {
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  #float-widget .disclaimer {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 8px;
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    #float-widget { width: calc(100vw - 32px); right: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<nav class="topbar">
+  <a class="topbar-brand" href="/">Dachshund Guide</a>
+  <span class="topbar-tagline">Care &bull; Facts &bull; National Day</span>
+</nav>
+
+<!-- PAGE LAYOUT -->
+<div class="page-wrap">
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <h1>Everything About Dachshunds</h1>
+    <p class="intro">Your complete resource for Dachshund lovers — breed facts, health tips, training advice, and national day celebration ideas.</p>
+
+    <!-- ARTICLES -->
+    
+        <article style="background:#f9f9f9; border-left:4px solid #ea580c; padding:20px; margin-bottom:24px; border-radius:4px;">
+            <h2 style="margin-top:0; font-size:1.2rem; color:#bb4609;">Coming soon — Dachshund articles</h2>
+            <p style="color:#555; margin:0;">We are preparing comprehensive guides about Dachshunds.
+            Subscribe below to be the first to know when new articles are published.</p>
+        </article>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3>Get Dachshund Tips</h3>
+      <p>Join Dachshund owners getting weekly care tips, health guides and breed news.</p>
+      <form onsubmit="return handleSidebarSubmit(event);" action="#" method="post">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe Free</button>
+      </form>
+      <p class="disclaimer">No spam. Unsubscribe anytime.</p>
+    </div>
+
+    <div class="about-box">
+      <strong>About This Site</strong><br>
+      Dedicated to <strong>Dachshund</strong> owners and enthusiasts. We publish in-depth guides, care tips, and celebrate every national dog day.
+    </div>
+  </aside>
+
+</div><!-- /page-wrap -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 dachshund-world.github.io &mdash; Dachshund Guide</p>
+  <p style="margin-top:6px;"><a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a></p>
+</footer>
+
+<!-- FLOATING WIDGET -->
+<div id="float-widget">
+  <h4>Love Dachshunds?</h4>
+  <p>Get free weekly breed tips straight to your inbox.</p>
+  <input type="email" id="float-email" placeholder="your@email.com">
+  <div class="float-row">
+    <button class="submit-btn" onclick="handleFloatSubmit()">Get Tips</button>
+    <button class="close-btn" onclick="closeWidget()">&#x2715;</button>
+  </div>
+  <p class="disclaimer">No spam. Unsubscribe anytime.</p>
+</div>
+
+<script>
+  // Show floating widget after 8 seconds
+  setTimeout(function() {
+    var w = document.getElementById('float-widget');
+    if (w) w.classList.remove('hidden');
+  }, 8000);
+  document.getElementById('float-widget').classList.add('hidden');
+
+  function closeWidget() {
+    document.getElementById('float-widget').classList.add('hidden');
+    try { sessionStorage.setItem('fw_closed', '1'); } catch(e) {}
+  }
+
+  function handleFloatSubmit() {
+    var em = document.getElementById('float-email').value;
+    if (!em || !em.includes('@')) { alert('Please enter a valid email.'); return; }
+    closeWidget();
+    // TODO: wire up to email provider (Mailchimp, ConvertKit, etc.)
+  }
+
+  function handleSidebarSubmit(e) {
+    e.preventDefault();
+    var form = e.target;
+    var em = form.querySelector('input[type=email]').value;
+    if (!em || !em.includes('@')) return false;
+    form.querySelector('button').textContent = 'Thanks!';
+    // TODO: wire up to email provider
+    return false;
+  }
+
+  // Don't show widget if user already closed it this session
+  try {
+    if (sessionStorage.getItem('fw_closed')) {
+      document.getElementById('float-widget').classList.add('hidden');
+    }
+  } catch(e) {}
+</script>
+
+</body>
+</html>
