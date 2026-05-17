@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dachshund Guide — Care, Facts &amp; National Day</title>
+<meta name="description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta name="robots" content="index, follow">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Courier New', 'Lucida Console', monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #222;
+    background: #f8f8f8;
+  }
+  a { color: #9a3412; text-decoration: none; }
+  a:hover { text-decoration: underline; color: #7b290e; }
+
+  /* ── Top bar ── */
+  .topbar {
+    background: #9a3412;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+  .topbar-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+  .topbar-brand {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+  .topbar-nav {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+  .topbar-nav a {
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .topbar-nav a:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+  @media(max-width:600px) {
+    .topbar-nav { display: none; }
+  }
+
+  /* ── Breadcrumb ── */
+  .breadcrumb {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .breadcrumb-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    color: #6b7280;
+  }
+  .breadcrumb-inner a { color: #9a3412; }
+  .breadcrumb-inner span { margin: 0 5px; }
+
+  /* ── Layout wrapper ── */
+  .page-wrap {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 20px 64px;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 28px;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .page-wrap { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+  }
+
+  /* ── Main ── */
+  .main-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px 28px 32px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .main-content h1 {
+    font-size: 1.75rem;
+    color: #7b290e;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    border-bottom: 3px solid #9a3412;
+    padding-bottom: 12px;
+  }
+  .main-content .intro {
+    color: #555;
+    margin-bottom: 28px;
+    font-size: 1rem;
+  }
+  .article-card {
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #9a3412;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background: #fafafa;
+    transition: box-shadow 0.2s;
+  }
+  .article-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+  .article-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .article-card h2 a { color: #7b290e; }
+  .article-card .meta { color: #9ca3af; font-size: 0.8rem; margin-bottom: 6px; }
+  .article-card p { color: #555; font-size: 0.93rem; margin: 0; }
+
+  /* ── Categories ── */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .cat-tag {
+    background: #9a3412;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar { position: sticky; top: 70px; }
+  .sidebar-widget {
+    background: #9a3412;
+    border-radius: 10px;
+    padding: 22px 18px;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+    margin-bottom: 20px;
+  }
+  .sidebar-widget h3 { font-size: 1rem; margin-bottom: 8px; font-weight: 700; }
+  .sidebar-widget p { font-size: 0.86rem; margin-bottom: 12px; opacity: 0.9; }
+  .sidebar-widget input[type="email"] {
+    width: 100%; padding: 9px 11px; border: none; border-radius: 5px;
+    font-size: 0.88rem; margin-bottom: 8px; outline: none;
+  }
+  .sidebar-widget button {
+    width: 100%; padding: 10px; background: #fff; color: #9a3412;
+    border: none; border-radius: 5px; font-weight: 700; font-size: 0.88rem;
+    cursor: pointer;
+  }
+  .sidebar-widget .disclaimer {
+    font-size: 0.7rem; opacity: 0.65; margin-top: 8px; text-align: center;
+  }
+  .sidebar-about {
+    background: #fff; border-radius: 8px; padding: 18px 16px;
+    font-size: 0.88rem; color: #444; line-height: 1.6;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    margin-bottom: 20px;
+  }
+  .sidebar-about strong { color: #7b290e; display: block; margin-bottom: 6px; font-size: 0.95rem; }
+  .sidebar-links {
+    background: #fff; border-radius: 8px; padding: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .sidebar-links h4 { font-size: 0.9rem; color: #7b290e; margin-bottom: 10px; }
+  .sidebar-links ul { list-style: none; }
+  .sidebar-links li { padding: 4px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.86rem; }
+  .sidebar-links li:last-child { border: none; }
+  .sidebar-links a { color: #9a3412; }
+
+  /* ── Footer ── */
+  .footer {
+    background: #7b290e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+  .footer-nav { margin-bottom: 8px; }
+  .footer-nav a {
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+
+  /* ── Bottom mobile bar (wariant bottom_mobile) ── */
+  #bottom-bar input[type="email"] { flex: 1; min-width: 0; }
+  @media (max-width: 480px) {
+    #bottom-bar span { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="/">Dachshund Guide</a>
+    <nav>
+      <ul class="topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span> Dachshund Guide
+  </div>
+</div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-wrap">
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <h1>Everything About Dachshunds</h1>
+    <p class="intro">Your complete resource for Dachshund lovers — breed facts, health tips, training advice, and national day ideas.</p>
+
+    <div class="categories">
+      <span class="cat-tag">Care Tips</span>
+      <span class="cat-tag">Breed Facts</span>
+      <span class="cat-tag">Health</span>
+      <span class="cat-tag">Training</span>
+    </div>
+
+    
+        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
+            <h2 style="margin-top:0; font-size:1.2rem;">
+                <a href="/can-dachshunds-use-stairs.html" style="color:#7b290e; text-decoration:none;">Can Dachshunds Use Stairs? What Owners Need to Know</a>
+            </h2>
+            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-17</p>
+            <p style='color:#555; margin:8px 0 0;'>Can Dachshunds use stairs? Learn when stairs are manageable, when ramps are safer, and how to reduce IVDD risk without turning life into panic.</p>
+        </article>
+    
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    
+    <div class="sidebar-widget">
+      <h3>Get Dachshund Tips</h3>
+      <p>Weekly care guides, health tips and breed news for Dachshund owners.</p>
+      <form onsubmit="return handleSidebarSubmit(event);" action="#" method="post">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe Free</button>
+      </form>
+      <p class="disclaimer">No spam. Unsubscribe anytime.</p>
+    </div>
+
+    <div class="sidebar-about">
+      <strong>About Dachshund Guide</strong>
+      Dedicated to Dachshund owners and enthusiasts. In-depth guides, care tips, and national dog day coverage.
+    </div>
+
+    <div class="sidebar-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/blog.html">Latest Articles</a></li>
+        <li><a href="/care.html">Dachshund Care Guide</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/privacy.html">Privacy</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<!-- FULL-WIDTH EMAIL BLOCK (wszystkie blogi) -->
+<div style="background:#9a3412;padding:48px 20px;text-align:center;">
+  <div style="max-width:560px;margin:0 auto;color:#fff;">
+    <h2 style="font-size:1.6rem;margin-bottom:10px;font-weight:700;">Love Dachshunds?</h2>
+    <p style="font-size:1rem;opacity:0.9;margin-bottom:24px;">Join thousands of Dachshund owners getting free weekly care tips, health guides and breed news.</p>
+    <form onsubmit="return handleFullWidthSubmit(event);" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+      <input type="email" name="email" placeholder="Enter your email address" required
+        style="flex:1;min-width:220px;max-width:340px;padding:13px 16px;border:none;border-radius:6px;font-size:0.97rem;outline:none;">
+      <button type="submit"
+        style="background:#fff;color:#9a3412;border:none;border-radius:6px;padding:13px 28px;font-weight:700;font-size:0.97rem;cursor:pointer;white-space:nowrap;">
+        Subscribe Free
+      </button>
+    </form>
+    <p style="font-size:0.75rem;opacity:0.65;margin-top:12px;">No spam. Unsubscribe anytime. We respect your privacy.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
+</footer>
+
+
+
+<script>
+  function handleSidebarSubmit(e) {
+    e.preventDefault();
+    var btn = e.target.querySelector('button');
+    btn.textContent = 'Thanks! ✓';
+    return false;
+  }
+  function handleBannerSubmit() {
+    var em = document.getElementById('banner-email');
+    if (!em || !em.value.includes('@')) return;
+    em.value = '';
+    em.placeholder = 'Thanks! ✓';
+    em.disabled = true;
+  }
+  function handleBottomSubmit() {
+    var em = document.getElementById('bottom-email');
+    if (!em || !em.value.includes('@')) return;
+    em.value = '';
+    em.placeholder = 'Thanks! ✓';
+    em.disabled = true;
+  }
+  function handleEmbedSubmit(e) {
+    e.preventDefault();
+    var btn = e.target.querySelector('button');
+    btn.textContent = 'Thanks! ✓';
+    return false;
+  }
+</script>
+</body>
+</html>
