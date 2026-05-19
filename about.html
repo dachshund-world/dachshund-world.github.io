@@ -16,6 +16,10 @@
   .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
   .nav { display: flex; gap: 14px; flex-wrap: wrap; }
   .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
+  .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .breadcrumb-inner { max-width: 1040px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb a { color: #6b7280; }
+  .breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
   .wrap { max-width: 1040px; margin: 28px auto; padding: 0 22px 40px; }
   .panel { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
   h1 { color: #78280e; font-size: 2rem; margin-bottom: 10px; }
@@ -41,6 +45,7 @@
     </nav>
   </div>
 </header>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1040px;"><a href="/">Home</a><span>›</span><span aria-current="page">About Dachshund Guide</span></div></nav>
 <div class="wrap">
   <section class="panel">
     <h1>About Dachshund Guide</h1>
