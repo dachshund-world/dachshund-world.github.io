@@ -1,0 +1,28 @@
+{
+  "site_name": "Dachshund World",
+  "site_url": "https://dachshund-world.github.io",
+  "niche": "Dachshunds",
+  "brand_voice": "Caring, protective, IVDD-aware — dachshunds deserve the best and their owners deserve straight answers",
+  "editorial_voice": "Gentle but factual — this breed faces real spinal risks and we communicate that clearly and compassionately",
+  "primary_author_label": "Dachshund World Content Editors",
+  "reviewer_label": "Dachshund World Editorial Panel",
+  "update_owner_label": "Dachshund World Content Editors",
+  "about_title": "About Dachshund World",
+  "editorial_policy_title": "Publishing Standards",
+  "disclosure_title": "How Dachshund World Is Funded",
+  "ai_assistance_disclosure": "Dachshund World uses AI tools to assist in drafting content. All articles — especially those covering IVDD and spinal health — are reviewed carefully by our editorial panel before publication.",
+  "article_eeat_block_variants": [
+    "<div style=\"border-left:4px solid #9a3412;background:#fff7ed;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#9a3412;\">Dachshund World Content Editors</strong> — Reviewed before publishing. Content covering back health and IVDD receives additional scrutiny before going live.</p></div>",
+    "<div style=\"border-left:4px solid #9a3412;background:#fff7ed;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#9a3412;\">IVDD-Aware Coverage:</strong> Dachshund World prioritizes spinal health information. Our editors review back-related content carefully because the stakes for this breed are high.</p></div>",
+    "<div style=\"border:1px solid #fdba74;background:#fffaf5;padding:14px 18px;margin:24px 0;border-radius:6px;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#9a3412;\">Editorial Care:</strong> This guide was reviewed by Dachshund World Content Editors. We write for dachshund owners who want honest, responsible information about this unique breed.</p></div>",
+    "<div style=\"background:#9a3412;color:#fff;padding:14px 18px;margin:24px 0;border-radius:6px;\"><p style=\"margin:0;font-size:0.93rem;\"><strong>Content Note:</strong> Dachshund World updates guides when information changes, especially on IVDD and harness safety. If something looks outdated, <a href=\"/contact.html\" style=\"color:#fde;\">contact our team</a>.</p></div>",
+    "<div style=\"border-top:2px solid #9a3412;padding-top:12px;margin:24px 0;\"><p style=\"font-size:0.88rem;color:#6b7280;margin:0;\">Published by <strong style=\"color:#9a3412;\">Dachshund World Content Editors</strong>. We cover dachshund back health, IVDD risk management, harness selection, and responsible long-body dog care.</p></div>"
+  ],
+  "disclosure_variants": [
+    "Dachshund World includes affiliate links to Amazon products. We may earn a commission at no additional cost to you.",
+    "Some links on this site are affiliate links. When you purchase through them, we receive a small fee — your price stays the same.",
+    "This site uses affiliate links to help fund content. Harness and product recommendations are based on suitability for dachshunds, not affiliate rates.",
+    "Dachshund World participates in Amazon affiliate programs. Commission income supports the site and does not influence our editorial choices.",
+    "Clicking a product link and purchasing may earn Dachshund World a referral commission. We recommend products because they matter for dachshund safety, not because of any financial arrangement."
+  ]
+}
