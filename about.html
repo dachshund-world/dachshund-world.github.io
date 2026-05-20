@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media (max-width:700px){
+  .layout-row{flex-direction:column!important;}
+  .layout-row aside{width:100%!important;flex-shrink:1!important;box-sizing:border-box;}
+  header nav{gap:8px!important;font-size:0.82rem!important;}
+  header div{flex-wrap:wrap!important;}
+}
+</style>
 <title>About Dachshund World</title>
 <meta name="description" content="Dachshund World covers dachshund care with a focus on IVDD awareness, spinal health, harness selection, and the long-body considerations that matter most for this breed.">
 <meta name="robots" content="index, follow">
@@ -29,7 +37,7 @@
   </div>
 </nav>
 <div style="max-width:1040px;margin:28px auto;padding:0 22px 40px;">
-  <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;">
+  <div class="layout-row" style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;">
     <main style="flex:1;min-width:0;">
       <article style="background:#fff;border-radius:10px;padding:32px;box-shadow:0 1px 6px rgba(0,0,0,0.08);">
         <h1 style="color:#78280e;font-size:2rem;margin:0 0 10px;">About Dachshund World</h1>
