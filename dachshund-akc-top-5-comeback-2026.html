@@ -46,12 +46,6 @@
   .sidebar-newsletter h3, .sidebar-newsletter p { color: #fff; }
   .sidebar-newsletter input { width: 100%; padding: 10px 12px; border: 0; border-radius: 6px; margin: 10px 0 8px; }
   .sidebar-newsletter button { width: 100%; padding: 10px 12px; border: 0; border-radius: 6px; background: #fff; color: #9a3412; font-weight: 700; cursor: pointer; }
-  .footer-links { background: #1e293b; border-top: 1px solid rgba(255,255,255,0.06); }
-  .footer-links-inner { max-width: 1120px; margin: 0 auto; padding: 16px 22px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-  .footer-links-label { color: rgba(255,255,255,0.38); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
-  .footer-links-nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
-  .footer-links-nav a { color: rgba(255,255,255,0.62); font-size: 0.87rem; text-decoration: none; }
-  .footer-links-nav a:hover { color: #fff; }
   .footer { background: #0f172a; color: rgba(255,255,255,0.74); }
   .footer-inner { max-width: 1120px; margin: 0 auto; padding: 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 0.87rem; }
   .footer a { color: rgba(255,255,255,0.9); }
@@ -123,7 +117,6 @@
   </a>
   <figcaption style="font-size:0.85rem; color:#6b7280; margin-top:8px;">Photo by <a href="https://www.reddit.com/r/Dachshund/comments/1taz8t2/stanley_turned_19_on_58/" target="_blank" rel="noopener noreferrer">u//u/IshtarsBones</a> on <a href="https://www.reddit.com/r/dachshund/" target="_blank" rel="noopener noreferrer">r/dachshund</a> (0 upvotes)</figcaption>
 </figure>
-
 
 <p>For more on how the breed’s resurgence fits into modern dog ownership trends, read our <a href="/blog.html">Dachshund Blog</a>. You may also find the full registration details in our <a href="/dachshund-akc-top-5-comeback-2026.html">dedicated article on the 2026 comeback</a>.</p>
 
@@ -345,3 +338,80 @@
 <p>Yes. As hunting dogs, they thrive on problem-solving. Puzzle toys, scent games, and training sessions prevent boredom and reduce destructive behaviors.</p>
 </details>
 
+</article>
+  <aside class="sidebar">
+    <section class="sidebar-panel sidebar-newsletter">
+      <h3>Get the next useful Dachshund note</h3>
+      <p>One short email with new guides, daily-care reminders, and owner-first explainers.</p>
+      <input type="email" placeholder="Your email">
+      <button>Get the notes</button>
+    </section>
+    <section class="sidebar-panel"><h3>More Dachshund Articles</h3><ul><li><a href="/can-dachshunds-use-stairs.html">Can Dachshunds Use Stairs? What Owners Need to Know</a></li><li><a href="/dachshund-step-in-harness.html">Dachshund Step-In Harness: What to Check Before You Buy</a></li><li><a href="/dorgi-care-guide-dachshund-corgi-mix.html">Dorgi Care Guide: what the dachshund x corgi mix inherits, and what owners underestimate</a></li><li><a href="/dachshund-akc-top-5-comeback.html">Dachshund AKC Top 5 Comeback 2026: Rankings Data and Analysis</a></li><li><a href="/dachshund-first-time-owner-guide.html">Dachshund First Time Owner Guide 2026</a></li><li><a href="/dachshund-ivdd-surgery-cost-and-recovery-timeline.html">Dachshund Ivdd Surgery Cost And Recovery Timeline</a></li><li><a href="/dachshund-puppy-crate-training-wont-sleep.html">Dachshund Puppy Crate Training Won'T Sleep</a></li><li><a href="/dachshund-separation-anxiety-bedtime-crate.html">Dachshund Separation Anxiety Bedtime Crate</a></li></ul></section>
+  </aside>
+</div>
+
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "dachshund-world.github.io";
+  var _article = "dachshund-akc-top-5-comeback-2026";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  // Scroll depth
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  // Time on page
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  // Newsletter CTA
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  // Pageview
+  _send("article_view", {});
+})();
+</script>
+</body>
+</html>
