@@ -29,7 +29,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
   }
   .topbar-inner {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -70,7 +70,7 @@
     border-bottom: 1px solid #e5e7eb;
   }
   .breadcrumb-inner {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 8px 20px;
     font-size: 0.82rem;
@@ -81,14 +81,13 @@
 
   /* ── Layout wrapper ── */
   .page-wrap {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 28px auto;
     padding: 0 20px 64px;
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 300px;
     gap: 28px;
-    align-items: start;
-  }
+    align-items: start;;grid-template-columns:minmax(0, 1fr) 300px;gap:26px;padding-left:22px;padding-right:22px;}
   @media (max-width: 700px) {
     .page-wrap { grid-template-columns: 1fr; }
     .sidebar { display: none; }
@@ -211,15 +210,79 @@
     #bottom-bar span { display: none; }
   }
 </style>
+<style id="sc-font">body{font-family:'Courier New', 'Lucida Console', monospace}body h1,body h2,body h3{font-family:'Courier New', 'Lucida Console', monospace}</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #9a3412;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #7b290e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
 </head>
 <body>
-
-<!-- TOP BAR -->
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="topbar-brand" href="/">Dachshund Guide</a>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Dachshund Guide</a>
     <nav>
-      <ul class="topbar-nav">
+      <ul class="sc-topbar-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/blog.html">Blog</a></li>
         <li><a href="/care.html">Care</a></li>
@@ -230,6 +293,10 @@
     </nav>
   </div>
 </header>
+
+
+<!-- TOP BAR -->
+
 
 
 <!-- BREADCRUMB -->
@@ -262,7 +329,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-07</p>
             <p style='color:#555; margin:8px 0 0;'>How energetic are dachshunds? Learn how much exercise your dachshund needs by age, the best activities, and how to spot the signs you're doing too little — or too much.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-separation-anxiety-bedtime-crate.html" style="color:#7b290e; text-decoration:none;">Dachshund Separation Anxiety Bedtime Crate</a>
@@ -270,15 +336,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-01</p>
             <p style='color:#555; margin:8px 0 0;'>By Dachshund World — Updated April 2025</p>
         </article>
-
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-akc-top-5-comeback.html" style="color:#7b290e; text-decoration:none;">Why Dachshunds Are Suddenly Everywhere Again</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-27</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshunds reclaimed the AKC top 5 after decades. Discover what's driving the surge—and the hidden health risk owners ignore.</p>
-        </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-puppy-crate-training-wont-sleep.html" style="color:#7b290e; text-decoration:none;">Dachshund Puppy Crate Training Won'T Sleep</a>
@@ -286,7 +343,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-27</p>
             <p style='color:#555; margin:8px 0 0;'>Dachshund Puppy Crate Training Won'T Sleep</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dorgi-care-guide-dachshund-corgi-mix.html" style="color:#7b290e; text-decoration:none;">Dorgi Care Guide Dachshund Corgi Mix</a>
@@ -294,7 +350,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-26</p>
             <p style='color:#555; margin:8px 0 0;'>Dorgi Care Guide Dachshund Corgi Mix</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-ivdd-surgery-cost-and-recovery-timeline.html" style="color:#7b290e; text-decoration:none;">Dachshund Ivdd Surgery Cost And Recovery Timeline</a>
@@ -302,7 +357,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-25</p>
             <p style='color:#555; margin:8px 0 0;'>Dachshund Ivdd Surgery Cost And Recovery Timeline</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-first-time-owner-guide.html" style="color:#7b290e; text-decoration:none;">Dachshund First Time Owner Guide 2026</a>
@@ -310,7 +364,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-23</p>
             <p style='color:#555; margin:8px 0 0;'>Dachshund First Time Owner Guide 2026</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-akc-top-5-comeback-2026.html" style="color:#7b290e; text-decoration:none;">Why Dachshunds are back in the AKC top 5 and what first-time owners keep missing</a>
@@ -318,7 +371,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-22</p>
             <p style='color:#555; margin:8px 0 0;'>Why Dachshunds are back in the AKC top 5 and what first-time owners keep missing</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-ivdd-statistics.html" style="color:#7b290e; text-decoration:none;">1 in 4 Dachshunds Get IVDD: Prevention & Treatment</a>
@@ -326,23 +378,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-20</p>
             <p style='color:#555; margin:8px 0 0;'>1 in 4 dachshunds develop IVDD. Learn proven prevention strategies, early warning signs, and treatment options to protect your dog's spine and mobility today.</p>
         </article>
-
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/can-dachshunds-use-stairs.html" style="color:#7b290e; text-decoration:none;">Can Dachshunds Use Stairs? What Owners Need to Know</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
-            <p style='color:#555; margin:8px 0 0;'>Find out when Dachshunds can use stairs, when a ramp is safer, and which warning signs mean you should stop and call your vet.</p>
-        </article>
-
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-step-in-harness.html" style="color:#7b290e; text-decoration:none;">Dachshund Step-In Harness: What to Check Before You Buy</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund Step-In Harness: What to Check Before You Buy</p>
-        </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/dachshund-weight-chart.html" style="color:#7b290e; text-decoration:none;">Keep Your Dachshund Healthy: Weight Guide by Age</a>
@@ -350,21 +385,19 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-18</p>
             <p style='color:#555; margin:8px 0 0;'>Stop guessing your dachshund's ideal weight. Find the exact chart for miniature & standard breeds—so you know they're thriving at every age.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/disclosure.html" style="color:#7b290e; text-decoration:none;">How Dachshund World Is Funded</a>
+                <a href="/can-dachshunds-use-stairs.html" style="color:#7b290e; text-decoration:none;">Can Dachshunds Use Stairs? What Owners Need to Know</a>
             </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-01-01</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund World's funding disclosure: affiliate links, Amazon Associates participation, and the wall between commercial income and editorial decisions.</p>
+            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
+            <p style='color:#555; margin:8px 0 0;'>Find out when Dachshunds can use stairs, when a ramp is safer, and which warning signs mean you should stop and call your vet.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/editorial-policy.html" style="color:#7b290e; text-decoration:none;">Publishing Standards — Dachshund World</a>
+                <a href="/dachshund-step-in-harness.html" style="color:#7b290e; text-decoration:none;">Dachshund Step-In Harness: What to Check Before You Buy</a>
             </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-01-01</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund World's publishing standards: how we handle IVDD-sensitive content, research, review, and updates for dachshund care guides.</p>
+            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
+            <p style='color:#555; margin:8px 0 0;'>Dachshund Step-In Harness: What to Check Before You Buy</p>
         </article>
     
   </main>
@@ -372,15 +405,7 @@
   <!-- SIDEBAR -->
   <aside class="sidebar">
     
-    <div class="sidebar-widget">
-      <h3>Get Dachshund Tips</h3>
-      <p>Weekly care guides, health tips and breed news for Dachshund owners.</p>
-      <form onsubmit="return handleSidebarSubmit(event);" action="#" method="post">
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">Subscribe Free</button>
-      </form>
-      <p class="disclaimer">No spam. Unsubscribe anytime.</p>
-    </div>
+    
 
     <div class="sidebar-about">
       <strong>About Dachshund Guide</strong>
@@ -396,41 +421,17 @@
         <li><a href="/privacy.html">Privacy</a></li>
         <li><a href="/sitemap.html">Sitemap</a></li>
       </ul>
-      <h4>Latest articles</h4><ul><li><a href="/dachshund-energy-level.html">Dachshund Energy Level: How Much Exercise Do They Really Need?</a></li><li><a href="/dachshund-separation-anxiety-bedtime-crate.html">Dachshund Separation Anxiety Bedtime Crate</a></li><li><a href="/dachshund-akc-top-5-comeback.html">Why Dachshunds Are Suddenly Everywhere Again</a></li><li><a href="/dachshund-puppy-crate-training-wont-sleep.html">Dachshund Puppy Crate Training Won'T Sleep</a></li></ul>
+      <h4>Latest articles</h4><ul><li><a href="/dachshund-energy-level.html">Dachshund Energy Level: How Much Exercise Do They Really Need?</a></li><li><a href="/dachshund-separation-anxiety-bedtime-crate.html">Dachshund Separation Anxiety Bedtime Crate</a></li><li><a href="/dachshund-puppy-crate-training-wont-sleep.html">Dachshund Crate Training: The Sleep Mistake Owners Make</a></li><li><a href="/dorgi-care-guide-dachshund-corgi-mix.html">7 Dorgi Care Mistakes Costing Owners $2,000+ in 2026</a></li><li><a href="/dachshund-ivdd-surgery-cost-and-recovery-timeline.html">How to Handle Dachshund IVDD Surgery—Without Financial Shock</a></li><li><a href="/dachshund-first-time-owner-guide.html">7 Critical Dachshund Owner Mistakes</a></li></ul>
     </div>
   </aside>
 
 </div>
 
 <!-- FULL-WIDTH EMAIL BLOCK (wszystkie blogi) -->
-<div style="background:#9a3412;padding:48px 20px;text-align:center;">
-  <div style="max-width:560px;margin:0 auto;color:#fff;">
-    <h2 style="font-size:1.6rem;margin-bottom:10px;font-weight:700;">Love Dachshunds?</h2>
-    <p style="font-size:1rem;opacity:0.9;margin-bottom:24px;">Join thousands of Dachshund owners getting free weekly care tips, health guides and breed news.</p>
-    <form onsubmit="return handleFullWidthSubmit(event);" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-      <input type="email" name="email" placeholder="Enter your email address" required
-        style="flex:1;min-width:220px;max-width:340px;padding:13px 16px;border:none;border-radius:6px;font-size:0.97rem;outline:none;">
-      <button type="submit"
-        style="background:#fff;color:#9a3412;border:none;border-radius:6px;padding:13px 28px;font-weight:700;font-size:0.97rem;cursor:pointer;white-space:nowrap;">
-        Subscribe Free
-      </button>
-    </form>
-    <p style="font-size:0.75rem;opacity:0.65;margin-top:12px;">No spam. Unsubscribe anytime. We respect your privacy.</p>
-  </div>
-</div>
+
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-nav">
-    <a href="/">Home</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/about.html">About</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/sitemap.html">Sitemap</a>
-  </div>
-  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
-</footer>
+
 
 
 
@@ -462,5 +463,16 @@
     return false;
   }
 </script>
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
+</footer>
 </body>
 </html>

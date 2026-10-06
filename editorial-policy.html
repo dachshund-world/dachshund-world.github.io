@@ -3,80 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@media (max-width:700px){
-  .layout-row{flex-direction:column!important;}
-  .layout-row aside{display:none!important;}
-  header nav{gap:8px!important;font-size:0.82rem!important;}
-  header div{flex-wrap:wrap!important;}
-}
-
-  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
-  .article-breadcrumb a { color: #6b7280; }
-  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
-
-</style>
-<title>Publishing Standards — Dachshund World</title>
-<meta name="description" content="Dachshund World's publishing standards: how we handle IVDD-sensitive content, research, review, and updates for dachshund care guides.">
+<title>Editorial Policy | Dachshund Guide</title>
+<link rel="canonical" href="https://dachshund-world.github.io/editorial-policy.html">
+<meta name="description" content="How Dachshund Guide researches, writes and checks its guides.">
 <meta name="robots" content="index, follow">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Courier New', 'Lucida Console', monospace; background: #f6f6f7; color: #1f2937; line-height: 1.75; }
+  a { color: #9a3412; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .topbar { background: #9a3412; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
+  .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .breadcrumb-inner { max-width: 1120px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb a { color: #6b7280; }
+  .breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+  .wrap { max-width: 1120px; margin: 28px auto; padding: 0 22px 40px; }
+  .panel { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  h1 { color: #78280e; font-size: 2rem; margin-bottom: 10px; }
+  h2 { color: #78280e; font-size: 1.3rem; margin: 24px 0 10px; }
+  p, li { color: #4b5563; }
+  ul { padding-left: 20px; margin: 12px 0; }
+  .intro { font-size: 1rem; margin-bottom: 18px; }
+  .footer { background: #78280e; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #9a3412;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #7b290e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Courier New', 'Lucida Console', monospace}body h1,body h2,body h3{font-family:'Courier New', 'Lucida Console', monospace}</style>
 </head>
-<body style="font-family:'Courier New','Lucida Console',monospace;background:#f6f6f7;color:#1f2937;line-height:1.75;margin:0;padding:0;">
-<header style="background:#9a3412;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.14);">
-  <div style="max-width:1040px;margin:0 auto;padding:14px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center;">
-    <a href="/" style="color:#fff;font-size:1.08rem;font-weight:700;text-decoration:none;">Dachshund World</a>
-    <nav style="display:flex;gap:14px;flex-wrap:wrap;">
-      <a href="/" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Home</a>
-      <a href="/blog.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Blog</a>
-      <a href="/care.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Care</a>
-      <a href="/about.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">About</a>
-      <a href="/contact.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Contact</a>
-      <a href="/sitemap.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Sitemap</a>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Dachshund Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
     </nav>
   </div>
 </header>
-<nav aria-label="Breadcrumb" style="background:#fff;border-bottom:1px solid #e5e7eb;">
-  <div style="max-width:1040px;margin:0 auto;padding:10px 22px;color:#6b7280;font-size:0.88rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-    <a href="/" style="color:#6b7280;text-decoration:none;">Home</a>
-    <span>&#8250;</span>
-    <span style="color:#374151;font-weight:600;" aria-current="page">Publishing Standards</span>
-  </div>
-</nav>
-<div style="max-width:1040px;margin:28px auto;padding:0 22px 40px;">
-  <article style="background:#fff;border-radius:10px;padding:32px;box-shadow:0 1px 6px rgba(0,0,0,0.08);">
-    <h1 style="color:#78280e;font-size:2rem;margin:0 0 10px;">Publishing Standards</h1>
-    <p style="font-size:1.05rem;color:#4b5563;margin:0 0 18px;">Dachshund World's publishing standards are shaped by a specific responsibility: this breed's spinal vulnerability means that incorrect or misleading care information can have direct consequences for a dog's health. These standards reflect that responsibility.</p>
 
-    <h2 style="color:#78280e;font-size:1.3rem;margin:28px 0 10px;">IVDD as the Editorial Lens</h2>
-    <p style="color:#4b5563;">Every guide on Dachshund World is written with the dachshund's back in mind. Harness recommendations are made because they reduce cervical and spinal strain — that context is always included. Stair access guides exist because jumping is a risk factor for disc events — that is stated, not implied. Weight management guides connect excess weight to increased disc pressure — because that connection is real and matters.</p>
-    <p style="color:#4b5563;">The <strong>Dachshund World Content Editors</strong> check each guide specifically for whether it treats the breed's spinal vulnerability with the prominence it deserves.</p>
 
-    <h2 style="color:#78280e;font-size:1.3rem;margin:28px 0 10px;">Research Sources</h2>
-    <p style="color:#4b5563;">Dachshund World draws on published veterinary literature on chondrodystrophic breeds, IVDD research, and established guidance from dachshund breed organisations. For statistics — particularly IVDD incidence rates — sources are verified before inclusion, because numbers cited without context can be both wrong and misleading.</p>
-    <p style="color:#4b5563;">AI drafting tools are used in the content production process. All AI-drafted content undergoes review and editing by our editorial panel before publication. Content covering IVDD, spinal signs, and emergency situations receives the most careful human review, because errors in these areas carry the highest stakes.</p>
 
-    <h2 style="color:#78280e;font-size:1.3rem;margin:28px 0 10px;">What We Refuse to Do</h2>
-    <p style="color:#4b5563;">We will not minimise IVDD risk to make the breed sound less challenging for prospective owners. We will not recommend collars over harnesses to preserve product affiliate relationships. We will not describe stair access as harmless when evidence suggests otherwise. Responsible ownership is better served by accurate information than by reassuring information.</p>
 
-    <h2 style="color:#78280e;font-size:1.3rem;margin:28px 0 10px;">Corrections Policy</h2>
-    <p style="color:#4b5563;">Errors are corrected promptly. Where a correction changes advice on a health-relevant topic, the article is updated and an amendment note is added. Readers who identify errors through the <a href="/contact.html" style="color:#9a3412;text-decoration:none;">Contact</a> page are thanked, and their correction is reviewed within days, not weeks.</p>
-
-    <h2 style="color:#78280e;font-size:1.3rem;margin:28px 0 10px;">Commercial Independence</h2>
-    <p style="color:#4b5563;">Affiliate links fund this site. The relationship between affiliate income and editorial content is explained on our <a href="/disclosure.html" style="color:#9a3412;text-decoration:none;">funding disclosure page</a>. In short: the editorial panel makes all content decisions independently. A harness that is safer for dachshunds gets recommended even if the commission rate is lower than alternatives.</p>
-  </article>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1120px;"><a href="/">Home</a><span>›</span><span aria-current="page">Editorial Policy</span></div></nav>
+<div class="wrap">
+  <section class="panel">
+<h1>Editorial Policy</h1>
+<p>Guides on Dachshund Guide are written by Lena Hartmann with the help of AI tools. Every statistic, cost figure and health claim has to come from a source we have opened and read, and that source is linked next to the claim. If something can't be confirmed, it doesn't go in.</p><p>We are not veterinarians and never present ourselves as such. Health articles explain what the research says and when to see a vet; diagnosis and treatment belong with your own veterinarian.</p><p>Articles are reviewed when new data appears or a reader reports an error through the <a href="/contact.html">contact page</a>.</p>
+</section>
 </div>
-<footer style="background:#78280e;color:rgba(255,255,255,0.75);margin-top:32px;">
-  <div style="max-width:1040px;margin:0 auto;padding:18px 22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-    <p>Dachshund World</p>
-    <p>
-      <a href="/privacy.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Privacy</a>
-      <span style="opacity:0.55;"> | </span>
-      <a href="/disclosure.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Disclosure</a>
-      <span style="opacity:0.55;"> | </span>
-      <a href="/contact.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Contact</a>
-      <span style="opacity:0.55;"> | </span>
-      <a href="/sitemap.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Sitemap</a>
-    </p>
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
   </div>
+  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
 </footer>
 </body>
 </html>
