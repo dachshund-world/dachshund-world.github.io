@@ -342,7 +342,11 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 .page-wrap,.layout,.wrap{align-items:start!important;overflow:visible!important}
 aside.sidebar{position:sticky!important;top:88px!important;align-self:start!important;max-height:calc(100vh - 104px);max-height:calc(100dvh - 104px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin}
 }
-</style><!--/dachshund-sticky-sidebar--></head>
+</style><!--/dachshund-sticky-sidebar--><!--home-photo--><style id="sc-home-photo">
+.sd-art.sd-photo{background:none!important;padding:0!important;overflow:hidden;position:relative;min-height:240px}
+.sd-art.sd-photo img{display:block;width:100%;height:100%;min-height:240px;object-fit:cover;border-radius:inherit}
+@media(max-width:760px){.sd-art.sd-photo,.sd-art.sd-photo img{min-height:200px;max-height:260px}}
+</style><!--/home-photo--></head>
 <body>
 <header class="sc-topbar">
   <div class="sc-topbar-inner">
@@ -384,7 +388,7 @@ aside.sidebar{position:sticky!important;top:88px!important;align-self:start!impo
       <span class="cat-tag">Training</span>
     </div>
   </div>
-  <div class="sd-art" aria-hidden="true"></div>
+  <figure class="sd-art sd-photo"><img src="/assets/dachshund-world-home.webp" width="1200" height="800" alt="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration" fetchpriority="high" decoding="async" data-ai-generated="true"></figure>
 </section>
 <div class="page-wrap">
 
