@@ -280,7 +280,12 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 .sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
 </style>
-</head>
+<!--dachshund-sticky-sidebar--><style id="sc-sticky-sidebar">
+@media(min-width:901px){
+.page-wrap,.layout,.wrap{align-items:start!important;overflow:visible!important}
+aside.sidebar{position:sticky!important;top:88px!important;align-self:start!important;max-height:calc(100vh - 104px);max-height:calc(100dvh - 104px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin}
+}
+</style><!--/dachshund-sticky-sidebar--></head>
 <body>
 <header class="sc-topbar">
   <div class="sc-topbar-inner">
