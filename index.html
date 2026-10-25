@@ -346,7 +346,44 @@ aside.sidebar{position:sticky!important;top:88px!important;align-self:start!impo
 .sd-art.sd-photo{background:none!important;padding:0!important;overflow:hidden;position:relative;min-height:240px}
 .sd-art.sd-photo img{display:block;width:100%;height:100%;min-height:240px;object-fit:cover;border-radius:inherit}
 @media(max-width:760px){.sd-art.sd-photo,.sd-art.sd-photo img{min-height:200px;max-height:260px}}
-</style><!--/home-photo--></head>
+</style><!--/home-photo-->
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Dachshund Guide — Care, Facts &amp; National Day">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dachshund-world.github.io/">
+<meta property="og:description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta property="og:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dachshund Guide — Care, Facts &amp; National Day">
+<meta name="twitter:description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta name="twitter:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<!-- social-cards:end -->
+</head>
 <body>
 <header class="sc-topbar">
   <div class="sc-topbar-inner">
@@ -390,7 +427,7 @@ aside.sidebar{position:sticky!important;top:88px!important;align-self:start!impo
   </div>
   <figure class="sd-art sd-photo"><img src="/assets/dachshund-world-home.webp" width="1200" height="800" alt="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration" fetchpriority="high" decoding="async" data-ai-generated="true"></figure>
 </section>
-<div class="page-wrap">
+<div class="page-wrap" data-follow-parent="true">
 
   <!-- MAIN CONTENT -->
   <main class="main-content">
@@ -494,7 +531,7 @@ aside.sidebar{position:sticky!important;top:88px!important;align-self:start!impo
   </main>
 
   <!-- SIDEBAR -->
-  <aside class="sidebar">
+  <aside class="sidebar" data-follow-sidebar="existing">
     
     
 

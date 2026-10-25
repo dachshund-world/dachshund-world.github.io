@@ -158,6 +158,43 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 .sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Disclosure | Dachshund Guide">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dachshund-world.github.io/disclosure.html">
+<meta property="og:description" content="Disclosure: AI assistance and affiliate links on Dachshund Guide.">
+<meta property="og:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Disclosure | Dachshund Guide">
+<meta name="twitter:description" content="Disclosure: AI assistance and affiliate links on Dachshund Guide.">
+<meta name="twitter:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -181,10 +218,10 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 
 <nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1120px;"><a href="/">Home</a><span>›</span><span aria-current="page">Disclosure</span></div></nav>
 <div class="wrap">
-  <section class="panel">
+  <div class="follow-sidebar-layout"><section class="panel" data-follow-content="true">
 <h1>Disclosure</h1>
 <p>Lena Hartmann drafts with AI help and verifies facts and sources before publishing.</p><p>Dachshund Guide currently has no affiliate links and publishes no sponsored content. Any future affiliate link will be clearly marked next to it.</p>
-</section>
+</section><aside data-follow-sidebar="added" aria-label="Sidebar"><section class="follow-sidebar-panel"><h2>Explore</h2><ul><li><a href="/">Home</a></li><li><a href="/blog.html">All guides</a></li><li><a href="/about.html">About this blog</a></li><li><a href="/contact.html">Contact</a></li></ul></section></aside></div>
 </div>
 
 
