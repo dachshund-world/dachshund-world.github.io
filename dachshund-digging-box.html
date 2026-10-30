@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dachshund Digging: Why They Dig and a Digging Box Plan</title>
+<meta name="description" content="Dachshund digging explained honestly: why they dig, a free digging-pattern decoder, how to build a digging box, and a 4-week plan to redirect it.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dachshund-world.github.io/dachshund-digging-box.html">
+
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; line-height: 1.8; color: #1a1a2e; background: #f7f7f7; }
+  a { color: #9a3412; text-decoration: none; } a:hover { text-decoration: underline; }
+
+  .topbar { background: #9a3412; color: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 54px; }
+  .topbar-brand { font-size: 1.1rem; font-weight: 700; color: #fff; }
+  .topbar-nav { display: flex; gap: 20px; } .topbar-nav a { color: rgba(255,255,255,.9); font-size: .9rem; }
+
+  .breadcrumb { max-width: 1120px; margin: 14px auto 0; padding: 0 20px; font-size: .83rem; color: #777; }
+  .breadcrumb a { color: #9a3412; }
+
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2c2c4a 100%); color: #fff; padding: 40px 20px 36px; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; }
+  .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; opacity: .65; margin-bottom: 10px; }
+  .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; max-width: 760px; }
+  .hero .lead { margin-top: 14px; opacity: .87; max-width: 680px; font-size: 1.05rem; }
+  .meta-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .meta-pill { background: rgba(255,255,255,.13); padding: 5px 14px; border-radius: 20px; font-size: .8rem; }
+
+  .wrap { max-width: 1120px; margin: 28px auto; padding: 0 20px 56px; display: grid; grid-template-columns: 1fr 300px; gap: 28px; }
+  @media (max-width: 720px) { .wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+  .content { background: #fff; border-radius: 10px; padding: 34px 38px; box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+  @media (max-width: 600px) { .content { padding: 22px 18px; } }
+
+  h2 { font-size: 1.28rem; color: #9a3412; margin: 34px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0cec4; }
+  h2:first-of-type { margin-top: 0; }
+  h3 { font-size: 1.04rem; color: #333; font-weight: 700; margin: 22px 0 10px; }
+  p { margin-bottom: 14px; }
+  ul, ol { margin: 0 0 16px 22px; } li { margin-bottom: 8px; }
+
+  .hero-img { width: 100%; border-radius: 8px; margin: 0 0 24px; display: block; }
+  .img-caption { font-size: .8rem; color: #888; margin: -18px 0 24px; text-align: center; }
+
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: .92rem; }
+  th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid #ece8e8; }
+  th { background: #9a3412; color: #fff; font-weight: 600; }
+  tr:nth-child(even) { background: #fdf8f6; }
+
+  .tip { background: #fef9ec; border-left: 4px solid #f5a623; padding: 14px 18px; margin: 20px 0; font-size: .93rem; border-radius: 0 6px 6px 0; }
+  .warning { background: #fdecea; border-left: 4px solid #e74c3c; padding: 14px 18px; margin: 20px 0; font-size: .93rem; border-radius: 0 6px 6px 0; }
+  .highlight-box { background: #f0f7ff; border-left: 5px solid #2980b9; padding: 18px 22px; margin: 22px 0; border-radius: 0 8px 8px 0; }
+  .highlight-box strong { display: block; font-size: .76rem; text-transform: uppercase; letter-spacing: .07em; color: #1a5f8a; margin-bottom: 8px; }
+
+  .faq details { border: 1px solid #ece8e8; border-radius: 8px; margin-bottom: 10px; }
+  .faq summary { padding: 14px 18px; font-weight: 600; cursor: pointer; list-style: none; font-size: .96rem; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq details[open] summary { border-bottom: 1px solid #ece8e8; color: #9a3412; }
+  .faq .answer { padding: 14px 18px; font-size: .92rem; color: #444; line-height: 1.7; }
+
+  .sidebar-card { background: #fff; border-radius: 10px; padding: 22px; box-shadow: 0 2px 8px rgba(0,0,0,.07); margin-bottom: 20px; }
+  .sidebar-title { font-size: .93rem; font-weight: 700; color: #9a3412; margin-bottom: 14px; text-transform: uppercase; letter-spacing: .04em; }
+  .related-links { list-style: none; margin: 0; padding: 0; }
+  .related-links li { padding: 9px 0; border-bottom: 1px solid #f2eeee; font-size: .92rem; }
+  .related-links li:last-child { border: none; }
+
+  .exercise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0 24px; }
+  @media (max-width: 500px) { .exercise-grid { grid-template-columns: 1fr; } }
+  .exercise-card { background: #fdf8f6; border: 1px solid #f0cec4; border-radius: 8px; padding: 16px; }
+  .exercise-card .age { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: #9a3412; font-weight: 700; margin-bottom: 6px; }
+  .exercise-card .mins { font-size: 1.5rem; font-weight: 800; color: #1a1a2e; }
+  .exercise-card .desc { font-size: .86rem; color: #555; margin-top: 4px; }
+
+  .cta-box { background: linear-gradient(135deg, #9a3412, #9a3412); color: #fff; border-radius: 10px; padding: 24px; margin-top: 32px; text-align: center; }
+  .cta-box h3 { color: #fff; margin: 0 0 10px; font-size: 1.05rem; }
+  .cta-box p { color: rgba(255,255,255,.88); margin-bottom: 16px; font-size: .92rem; }
+  .cta-btn { display: inline-block; background: #fff; color: #9a3412; font-weight: 700; padding: 11px 26px; border-radius: 6px; font-size: .93rem; }
+
+  footer { background: #1a1a2e; color: rgba(255,255,255,.6); padding: 24px 20px; margin-top: 40px; text-align: center; font-size: .87rem; }
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+
+
+
+<style>article.content a{color:#0066cc}article.content a:visited{color:#0052a3}article.content a:hover{text-decoration:underline}</style>
+
+
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Dachshunds Dig, and How to Redirect It With a Digging Box",
+  "description": "Dachshund digging explained honestly: why they dig, a free digging-pattern decoder, how to build a digging box, and a 4-week plan to redirect it.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Organization",
+    "name": "Dachshund World Content Editors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dachshund World"
+  },
+  "mainEntityOfPage": "https://dachshund-world.github.io/dachshund-digging-box.html"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you stop a dachshund from digging completely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Honestly, rarely — and trying usually backfires. Digging is a core breed instinct. The realistic goal is to give it a dedicated outlet, like a digging box, and make the rest of the yard less available and less rewarding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I put in a dog digging box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Outdoors, washed play sand, loose topsoil, or a mix work well. Indoors, use crumpled paper, old towels, fleece strips, or ball-pit balls. Bury toys and chews in it so digging pays off quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take for a dachshund to use a digging box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many dogs dig in a well-seeded box within the first few sessions. Moving the habit away from old spots usually takes a few weeks of supervision, blocking, and calm redirection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my dachshund dig in blankets and on the bed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's a normal nesting and burrowing behavior — many dachshunds scratch and circle before lying down. Give them a burrow bed or a blanket they're allowed to dig in, and it usually isn't a problem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I fill in the holes my dachshund digs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but do it when your dog isn't watching, and cover the spot with a barrier for a while. Fresh soil is extra tempting, so a filled hole without a barrier often gets dug again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is earthdog a good activity for dachshunds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For many dachshunds, yes. Earthdog lets them follow scent through tunnels to caged quarry in a safe, structured way. According to the AKC, dachshunds can take part from six months of age."
+      }
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Digging deep! Create a quick and easy enrichment box | Dogs Trust",
+  "description": "Dogs Trust Dog School coach Allie shows how to make a quick and easy enrichment box for your dog.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/_ATSGFJln98/hqdefault.jpg",
+  "uploadDate": "2020-04-22T00:00:00Z",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/_ATSGFJln98"
+}</script>
+<style>#dig-decoder select{max-width:100%;font:inherit;padding:6px}#dig-decoder button{background:#9a3412;color:white;border:0;border-radius:5px;padding:10px 16px;cursor:pointer;font:inherit}</style>
+<!--dachshund-sticky-sidebar--><!--/dachshund-sticky-sidebar-->
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Dachshund Digging: Why They Dig and a Digging Box Plan">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dachshund-world.github.io/dachshund-digging-box.html">
+<meta property="og:description" content="Dachshund digging explained honestly: why they dig, a free digging-pattern decoder, how to build a digging box, and a 4-week plan to redirect it.">
+<meta property="og:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dachshund Digging: Why They Dig and a Digging Box Plan">
+<meta name="twitter:description" content="Dachshund digging explained honestly: why they dig, a free digging-pattern decoder, how to build a digging box, and a 4-week plan to redirect it.">
+<meta name="twitter:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<!-- social-cards:end -->
+<style>.hero-inner.with-photo{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:48px;grid-template-rows:auto auto 1fr;align-items:start}.hero-inner.with-photo>*{grid-column:1}.hero-inner.with-photo>.hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center}.hero-photo img{display:block;width:100%;height:auto;border-radius:8px}.hero-photo figcaption{font-size:11px;color:inherit;opacity:.75;margin-top:4px}@media(max-width:860px){.hero-inner.with-photo{display:block}.hero-photo{display:none}}</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #9a3412;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #7b290e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
+a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
+/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
+.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Courier New', 'Lucida Console', monospace}body h1,body h2,body h3{font-family:'Courier New', 'Lucida Console', monospace}</style>
+<style id="sc-dachshund-design">
+:root{--p:#fff8ec;--i:#3a2414;--m:#6e5642;--l:#f0dcc0;--d:#5a2e14;--od:#fff1dc;--a:#f2a541;--ai:#8a4a12;--card:#fffdf8;--bar:#f2a541;--bart:#3a2414;--r:10px;--hf:'Trebuchet MS',Arial,sans-serif;--bf:Verdana,Geneva,sans-serif;--p2:#fdebd1}
+body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
+header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
+header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
+header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:none}
+header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
+header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
+header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
+.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
+.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
+.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:none;text-wrap:balance}
+.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
+.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
+.sd-art{min-height:220px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23f2a541'%3E%3Cellipse cx='20' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='44' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='9' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='55' cy='34' rx='5' ry='7'/%3E%3Cpath d='M32 28c-10 0-18 12-18 20 0 6 6 8 10 6 4-2 6-2 8-2s4 0 8 2c4 2 10 0 10-6 0-8-8-20-18-20z'/%3E%3C/g%3E%3C/svg%3E") 0 0/56px 56px repeat}
+.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
+.main-content>:not(article){grid-column:1/-1}
+.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
+.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
+.main-content>article h2 a::after{content:"";position:absolute;inset:0}
+.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
+.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
+.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
+.sidebar-about strong{color:var(--i)}
+.hero{background:#5a2e14!important;color:#fff1dc!important;border-bottom:4px solid var(--a)}
+.hero h1{color:#fff1dc!important;letter-spacing:-.02em;text-transform:none}.hero p{color:#fff1dc!important;opacity:.9}
+.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
+.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
+.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
+.article th{background:var(--p2)!important;color:var(--i)!important}
+.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
+.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
+.wrap .panel h1{color:var(--i);text-transform:none}
+footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
+footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
+
+.sd-cover{display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:end;padding:40px 36px;background:var(--p2);border-left:12px solid var(--a);color:var(--i)}
+.sd-cover .intro{color:var(--m);opacity:1}
+.sd-art{min-height:220px;border-radius:var(--r);background-color:var(--d)}
+.main-content>article:first-of-type{grid-column:1/-1;background:var(--d)!important;border-color:var(--d)!important;padding:34px!important}
+.main-content>article:first-of-type h2{font-size:2rem!important;color:var(--od)!important}
+.main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:var(--od)!important}
+.main-content>article:first-of-type p{color:var(--od)!important;opacity:.85}
+.main-content>article:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
+@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
+header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
+.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
+.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
+.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style>
+<style id="sc-sticky-sidebar">
+@media(min-width:901px){
+.page-wrap,.layout,.wrap{align-items:start!important;overflow:visible!important}
+aside.sidebar{position:sticky!important;top:88px!important;align-self:start!important;max-height:calc(100vh - 104px);max-height:calc(100dvh - 104px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin}
+}
+</style>
+</head>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Dachshund Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › <a href="/blog.html">Blog</a> › Dachshund Digging
+</div>
+
+<section class="hero"><div class="hero-inner with-photo"><div class="kicker">Breed Guide · Behavior and Everyday Care</div><h1>Why Dachshunds Dig, and How to Redirect It With a Digging Box</h1><p class="lead">No magic fixes, no punishment: an honest plan that gives a born digger one place to dig.</p><div class="meta-pills"><span class="meta-pill">Digging-pattern decoder</span><span class="meta-pill">DIY digging box</span><span class="meta-pill">Reward-based</span></div>
+    <figure class="hero-photo"><img src="/assets/dachshund-world-home.webp" alt="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration" width="1200" height="800" loading="lazy" decoding="async"><figcaption>AI-generated illustration.</figcaption></figure>
+  </div></section>
+
+<main>
+  <div class="wrap" data-follow-parent="true">
+    <article class="content">
+<p>Dachshund digging is not a training failure — it's the breed doing exactly what it was built to do, just in your flower bed, under your fence, or in the middle of your duvet. Here's the honest truth up front: you probably won't stop a dachshund from digging, and you don't need to. What you can do is decide <em>where</em> it happens, and a well-set-up digging box is the most reliable tool we know for that.</p>
+<div class="highlight-box"><strong>Quick answer</strong><p>Dachshunds dig because they were bred to hunt burrowing animals, and digging also relieves boredom, cools them down, and makes a cozy bed. Instead of fighting the instinct, give it a legal outlet: a sand or soil digging box (outdoors) or a blanket-and-paper dig box (indoors), seeded with buried toys and treats. Make it more rewarding than anywhere else, supervise the old spots for a few weeks, calmly redirect, and never punish after the fact.</p></div>
+
+<h2>What's behind your dachshund's digging?</h2>
+<p>Answer four questions and this tool suggests the most likely reason, a digging box that fits your space and dog, and the first steps to take. Nothing is saved or sent.</p>
+<div class="tip" id="dig-decoder">
+<p><label for="dd-where"><strong>1. Where does your dachshund dig most?</strong></label><br><select id="dd-where">
+<option value="beds">Garden beds, pots, or freshly turned soil</option>
+<option value="lawn">Random holes in the lawn, often with nose down first</option>
+<option value="fence">Along or under the fence</option>
+<option value="shade">Shady spots, then lies in the hole</option>
+<option value="indoor">Blankets, cushions, the sofa, or the bed</option>
+</select></p>
+<p><label for="dd-when"><strong>2. When does it usually happen?</strong></label><br><select id="dd-when">
+<option value="alone">When left alone or outside for long stretches</option>
+<option value="critters">After smelling or seeing small animals</option>
+<option value="hot">On warm days</option>
+<option value="rest">Before settling down to rest or sleep</option>
+<option value="watching">Mostly when I'm watching or busy nearby</option>
+</select></p>
+<p><label for="dd-size"><strong>3. Dog size</strong></label><br><select id="dd-size">
+<option value="mini">Miniature</option>
+<option value="std">Standard</option>
+</select></p>
+<p><label for="dd-space"><strong>4. Where could a digging box go?</strong></label><br><select id="dd-space">
+<option value="yard">Yard or garden</option>
+<option value="patio">Patio or balcony</option>
+<option value="inside">Indoors only</option>
+</select></p>
+<button type="button" id="dd-go">Decode the digging</button>
+<div id="dd-result" role="status" aria-live="polite"></div>
+<noscript><p>Without JavaScript: match where and when your dog digs to the reasons table further down, then build the box type that fits your space using the step-by-step section.</p></noscript>
+</div>
+<p>A transparent note on this tool: the reasons are drawn from common causes listed by animal-welfare organizations, while the box sizes are our own practical suggestions, not a standard. Real dogs often dig for more than one reason, so treat the result as a starting point.</p>
+<p>If you'd like to see how simple an indoor dig box can be, this short video from UK charity Dogs Trust shows one of their Dog School coaches putting together a quick enrichment box your dog can dig and forage through.</p>
+<div style="position:relative;width:100%;aspect-ratio:16/9;margin:18px 0"><iframe src="https://www.youtube-nocookie.com/embed/_ATSGFJln98" loading="lazy" title="Dogs Trust: Create a quick and easy enrichment box" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>Why do dachshunds dig so much?</h2>
+<p>Because digging was their job. Dachshunds were bred to follow badgers and other burrowing animals underground, so the urge to sniff, scrape, and tunnel is wired in rather than learned.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Dachshund" rel="noopener noreferrer">Wikipedia entry on the breed</a> sums up their origins: dachshunds were bred to scent, chase, and flush out badgers and other burrow-dwelling animals, while miniatures were bred to hunt smaller animals such as rabbits. That heritage shows up in the body too — strong front legs and big paddle-shaped paws make them very efficient diggers for their size.</p>
+<p>We'll be straight with you: no amount of "no!" removes a breed instinct. Owners who try to ban digging entirely tend to end up with a frustrated dog who digs anyway, just more secretly. Owners who give the instinct a job usually end up with a dog who digs in one place and leaves the rest alone.</p>
+<h3>It's not only instinct</h3>
+<p>Instinct explains the <em>urge</em>; the situation explains when it boils over. Animal-welfare groups such as the <a href="https://ivhsspca.org/digging/" rel="noopener noreferrer">Inland Valley Humane Society and SPCA</a> list boredom and loneliness, being left alone for long periods, a barren area without toys, young dogs with energy and no outlet, chasing burrowing animals, cooling off in hot weather, and attention-seeking among the common reasons dogs dig. A dachshund often ticks several of these boxes at once.</p>
+
+<h2>What are the different types of dachshund digging?</h2>
+<p>Most digging falls into a few recognizable patterns, and each needs a slightly different fix. Look at where, when, and what your dog does right after digging.</p>
+<table><caption>Dachshund digging patterns and what usually helps</caption><thead><tr><th>Pattern</th><th>What you'll see</th><th>Likely driver</th><th>What usually helps</th></tr></thead><tbody>
+<tr><td>Hunting dig</td><td>Nose down, intense sniffing, holes in the lawn or near sheds</td><td>Scent of small animals underground</td><td>Digging box with buried "finds," nose work games, supervision</td></tr>
+<tr><td>Boredom dig</td><td>Holes appear while you're out or busy</td><td>Too little to do</td><td>More daily enrichment, shorter unsupervised yard time</td></tr>
+<tr><td>Cooling dig</td><td>Shallow pit in shade, dog lies in it</td><td>Heat</td><td>Shade, water, cooling mat, bring inside on hot days</td></tr>
+<tr><td>Nesting dig</td><td>Scratching and circling in blankets before lying down</td><td>Comfort and burrowing to sleep</td><td>A burrow bed or a blanket your dog is allowed to "dig"</td></tr>
+<tr><td>Fence dig</td><td>Digging along or under the boundary</td><td>Interest in what's outside, or wanting to get out</td><td>Secure the fence base, supervise, address why your dog wants out</td></tr>
+<tr><td>Garden-bed dig</td><td>Freshly turned soil, pots, or compost disturbed</td><td>Soft, smelly soil is irresistible</td><td>Fence off beds, offer an even better digging spot</td></tr>
+<tr><td>Attention dig</td><td>Digs mostly when you're watching</td><td>Digging gets a reaction</td><td>Calm redirect, attention for digging in the right place</td></tr>
+</tbody></table>
+<p>A note on nesting: a dachshund scratching at blankets before bed is about as normal as it gets. Unless they're shredding the fabric, it doesn't need "fixing" — a dedicated burrow blanket keeps your duvet in one piece.</p>
+
+<h2>How do you build a digging box for a dachshund?</h2>
+<p>A digging box is a defined spot filled with loose, safe material where your dog is allowed — and actively encouraged — to dig. Outdoors that means sand or soil; indoors it means blankets, paper, or a ball pit.</p>
+<h3>Outdoor digging box: step by step</h3>
+<ol>
+<li><strong>Pick the spot your dog already likes.</strong> If they always dig by the back fence, put the box nearby. Shade helps in summer.</li>
+<li><strong>Frame it.</strong> A child's sandbox, a sturdy plastic tub, or a simple timber frame works. As a rough guide, we suggest about 24 × 36 inches for a miniature and 36 × 48 inches for a standard, with 8–12 inches of fill — enough to dig properly without the box taking over the yard.</li>
+<li><strong>Fill with something soft and clean.</strong> Washed play sand, loose topsoil, or a mix. Avoid anything that stays soggy, and keep fertilized garden soil out of the box.</li>
+<li><strong>Cover it when not in use</strong> if neighborhood cats might treat it as a litter box.</li>
+<li><strong>Seed it.</strong> Bury a few favorite toys and some long-lasting chews, partly visible at first so the first dig pays off within seconds.</li>
+</ol>
+<h3>Indoor or balcony dig box</h3>
+<ol start="6">
+<li>Use a shallow cardboard box, a laundry basket, or a small paddling pool.</li>
+<li>Fill it with crumpled paper, old towels, fleece strips, or a few plastic ball-pit balls.</li>
+<li>Hide treats and a toy inside and let your dog root them out. Remove paper if your dog starts eating it rather than digging through it.</li>
+</ol>
+<div class="tip"><p><strong>Make digging "pay":</strong> the box only works if it's more rewarding than your flower bed. Rotate what's buried, add a new toy now and then, and join in at first by scratching at the surface yourself. For more ideas to keep the box exciting, see our guide to <a href="/dachshund-toys-enrichment.html">dachshund toys and enrichment</a>.</p></div>
+
+<h2>How do you teach a dachshund to dig in the box instead of the garden?</h2>
+<p>Make the box the best place to dig, make the old spots less available, and redirect calmly every time. Consistency over two to four weeks matters far more than any single trick.</p>
+<h3>Week 1: make the box exciting</h3>
+<ul>
+<li>Take your dog to the box several times a day and bury a treat while they watch. Say a cue like "dig it!" as they start.</li>
+<li>Praise and reward as soon as they dig in the box. Let them "win" quickly.</li>
+<li>Go out together — digging alone in an unsupervised yard is when old habits happen.</li>
+</ul>
+<h3>Weeks 2–3: block the old spots and redirect</h3>
+<ul>
+<li>Temporarily fence or cover favorite holes and garden beds with chicken wire laid flat, rocks, or a raised planter edge.</li>
+<li>If you catch your dog digging elsewhere, interrupt calmly, take them to the box, and reward digging there. The Inland Valley Humane Society recommends exactly this: interrupt and promptly lead the dog to the designated digging area.</li>
+<li>Keep unsupervised yard time short until the habit shifts.</li>
+</ul>
+<h3>Week 4 and beyond: maintain it</h3>
+<ul>
+<li>Bury something new a few times a week so checking the box stays worthwhile.</li>
+<li>Slowly remove the barriers one at a time and watch what happens.</li>
+<li>Expect the odd slip on exciting days — that's normal, not failure.</li>
+</ul>
+
+<h2>Can earthdog and nose work replace the urge to dig?</h2>
+<p>They can take a big edge off it. Giving a dachshund a structured way to hunt, sniff, and "go to ground" satisfies the same instinct that sends them into your borders.</p>
+<h3>Earthdog: the sport built for diggers</h3>
+<p>The <a href="https://www.akc.org/expert-advice/sports/earthdog-101-tap-into-your-small-terriers-or-dachshunds-heritage/" rel="noopener noreferrer">AKC's Earthdog introduction</a> explains that the sport is open to dachshunds and small terriers from six months of age. Dogs follow a scent through human-built tunnels to reach caged quarry — tame rats kept safely behind bars, so no animal is harmed. It's the closest thing to the job dachshunds were bred for, and many owners find it a fun weekend outlet.</p>
+<h3>Nose work at home</h3>
+<p>You don't need a club to use your dog's nose. In a study summarized by <a href="https://caninewelfare.centers.purdue.edu/resource/let-me-sniff-nosework-induces-positive-judgment-bias-in-pet-dogs" rel="noopener noreferrer">Purdue University's Center for Animal Welfare Science</a>, pet dogs that did daily nosework for two weeks responded to an ambiguous cue more optimistically afterward than dogs that practiced heelwork. To be clear, that study didn't measure digging — but it supports something many owners notice: a dog who gets to use their nose every day tends to be more settled.</p>
+<p>Simple ways to start: scatter part of a meal in the grass, hide treats under upturned cups, or play "find it" around one room. If your dog's digging is linked to restlessness in general, our guide to <a href="/dachshund-energy-level.html">dachshund energy levels and daily exercise</a> can help you check whether they're getting enough activity overall.</p>
+
+<h2>What about digging under the fence?</h2>
+<p>Fence digging deserves extra attention because a dachshund that gets out is at risk. Secure the boundary first, then work on why your dog wants to dig there.</p>
+<ul>
+<li><strong>Check the base of the fence</strong> for gaps and soft soil. Burying wire mesh along the bottom or laying it flat outward along the ground (an "L-footer") makes tunneling much harder.</li>
+<li><strong>Look for the attraction.</strong> Neighbor dogs, wildlife under a shed, or a busy footpath can all trigger boundary digging.</li>
+<li><strong>Supervise outdoor time</strong> until the fence is secure and the digging box has become the go-to spot.</li>
+<li><strong>Think about loneliness.</strong> Dogs left outside for long stretches dig more. If your dog digs mainly when you leave, our guide to <a href="/dachshund-separation-anxiety-bedtime-crate.html">dachshund separation anxiety and crate routines</a> covers gentle alone-time training.</li>
+</ul>
+
+<h2>Common mistakes we see (and honestly made ourselves)</h2>
+<ul>
+<li><strong>Punishing a hole you found later.</strong> Your dog can't link a scolding to something they did an hour ago. The Inland Valley Humane Society is blunt about this: never punish after the fact, because it won't stop the behavior and can make your dog fearful and anxious.</li>
+<li><strong>Building the box and walking away.</strong> An empty box of sand is boring. Seed it, visit it, and make it pay.</li>
+<li><strong>Leaving the old spots open.</strong> Every successful dig in the flower bed is practice. Block them while the new habit forms.</li>
+<li><strong>Filling holes with your dog watching.</strong> To a dachshund, you've just "dug" there too — and freshly turned soil is even more interesting.</li>
+<li><strong>Too much unsupervised yard time.</strong> A bored dachshund alone outside will find a job.</li>
+<li><strong>Expecting zero digging.</strong> A realistic goal is digging in the right place, not no digging at all.</li>
+<li><strong>Ignoring the weather.</strong> If your dog digs cool pits in summer, the fix is shade and water, not training.</li>
+<li><strong>Using deterrents that could hurt.</strong> Skip anything sharp, toxic, or designed to startle. Simple barriers and a better alternative work without risk.</li>
+</ul>
+<p>If you're new to the breed and still building a routine, our <a href="/dachshund-first-time-owner-guide.html">first-time dachshund owner guide</a> helps put walks, play, and rest into a schedule that leaves less time for unauthorized excavation.</p>
+
+<section class="faq"><h2>Dachshund digging FAQ</h2>
+<details><summary>Can you stop a dachshund from digging completely?</summary><div class="answer">Honestly, rarely — and trying usually backfires. Digging is a core breed instinct. The realistic goal is to give it a dedicated outlet, like a digging box, and make the rest of the yard less available and less rewarding.</div></details>
+<details><summary>What should I put in a dog digging box?</summary><div class="answer">Outdoors, washed play sand, loose topsoil, or a mix work well. Indoors, use crumpled paper, old towels, fleece strips, or ball-pit balls. Bury toys and chews in it so digging pays off quickly.</div></details>
+<details><summary>How long does it take for a dachshund to use a digging box?</summary><div class="answer">Many dogs dig in a well-seeded box within the first few sessions. Moving the habit away from old spots usually takes a few weeks of supervision, blocking, and calm redirection.</div></details>
+<details><summary>Why does my dachshund dig in blankets and on the bed?</summary><div class="answer">It's a normal nesting and burrowing behavior — many dachshunds scratch and circle before lying down. Give them a burrow bed or a blanket they're allowed to dig in, and it usually isn't a problem.</div></details>
+<details><summary>Should I fill in the holes my dachshund digs?</summary><div class="answer">Yes, but do it when your dog isn't watching, and cover the spot with a barrier for a while. Fresh soil is extra tempting, so a filled hole without a barrier often gets dug again.</div></details>
+<details><summary>Is earthdog a good activity for dachshunds?</summary><div class="answer">For many dachshunds, yes. Earthdog lets them follow scent through tunnels to caged quarry in a safe, structured way. According to the AKC, dachshunds can take part from six months of age.</div></details>
+</section>
+
+<h2>The honest bottom line</h2>
+<p>Dachshund digging comes from generations of breeding, so the kindest and most effective plan is to stop fighting it and start directing it. Build a digging box, make it the best spot in the yard, block the old favorites for a few weeks, and add nose work or earthdog for the hunter inside. You'll still have a digger — just one who digs where you've said yes.</p>
+<div style="border:1px solid #fdba74;background:#fffaf5;padding:14px 18px;margin:24px 0;border-radius:6px;"><p style="margin:0;font-size:0.93rem;color:#4b5563;"><strong style="color:#9a3412;">Editorial Care:</strong> This guide was reviewed by Dachshund World Content Editors. We write for dachshund owners who want honest, responsible information about this unique breed.</p></div>
+<script>
+(function () {
+function g(id){ return document.getElementById(id); }
+function run () {
+  var where = g('dd-where').value, when = g('dd-when').value, size = g('dd-size').value, space = g('dd-space').value;
+  var reason, steps = [];
+  if (where === 'fence') reason = 'Boundary digging — interest in what is outside, or wanting to get out.';
+  else if (where === 'shade' || when === 'hot') reason = 'Cooling digging — making a cool pit to lie in.';
+  else if (where === 'indoor' || when === 'rest') reason = 'Nesting and burrowing — getting comfortable before rest.';
+  else if (when === 'critters' || where === 'lawn') reason = 'Hunting digging — following the scent of small animals underground.';
+  else if (when === 'alone') reason = 'Boredom digging — too little to do during long stretches alone.';
+  else if (when === 'watching') reason = 'Attention digging — it reliably gets a reaction.';
+  else reason = 'Soft-soil digging — freshly turned earth is irresistible to a dachshund nose.';
+  var box;
+  if (space === 'inside' || where === 'indoor') box = 'Indoor dig box: a shallow cardboard box or laundry basket with crumpled paper, old towels, or fleece strips, plus hidden treats' + (where === 'indoor' ? ' — and a burrow blanket your dog is allowed to scratch.' : '.');
+  else if (space === 'patio') box = 'Patio box: a sturdy plastic tub about ' + (size === 'mini' ? '20 × 30' : '28 × 40') + ' inches with 6–8 inches of play sand or ball-pit balls.';
+  else box = 'Garden box: about ' + (size === 'mini' ? '24 × 36' : '36 × 48') + ' inches, 8–12 inches of washed play sand or loose topsoil' + (where === 'shade' || when === 'hot' ? ', placed in shade.' : ', placed near the spot your dog already likes.');
+  if (where === 'fence') steps.push('Secure the base of the fence first (buried or L-shaped mesh) and supervise yard time.');
+  if (where === 'shade' || when === 'hot') steps.push('Add shade and water; bring your dog in on hot days. This one is about comfort, not training.');
+  if (when === 'alone') steps.push('Shorten unsupervised outdoor time and add a daily sniffing game before you leave.');
+  if (when === 'critters' || where === 'lawn') steps.push('Add daily nose work (scatter feeding, find-it) and consider trying earthdog.');
+  if (when === 'watching') steps.push('Stay neutral when your dog digs in the wrong spot; give attention when they dig in the box.');
+  if (where === 'beds') steps.push('Fence or cover garden beds for a few weeks while the new habit forms.');
+  steps.push('Bury toys and treats in the box, cue "dig it!", and reward every dig there.');
+  steps.push('If you catch digging elsewhere, interrupt calmly and walk your dog to the box. Never punish a hole found later.');
+  g('dd-result').innerHTML = '<p style="margin-top:12px"><strong>Likely reason:</strong> ' + reason + '</p><p><strong>Box to build:</strong> ' + box + '</p><p><strong>First steps:</strong></p><ul><li>' + steps.join('</li><li>') + '</li></ul>';
+}
+g('dd-go').addEventListener('click', run);
+['dd-where','dd-when','dd-size','dd-space'].forEach(function (id) { g(id).addEventListener('change', run); });
+run();
+}());
+</script>
+<p class="ai-note">Dachshund World uses AI tools to assist in drafting content. All articles are reviewed by our editorial panel before publication.</p>
+</article>
+
+    <aside class="sidebar" data-follow-sidebar="existing"><section class="sidebar-panel"><h3>More Dachshund Articles</h3><ul><li><a href="/dachshund-separation-anxiety-bedtime-crate.html">Dachshund Separation Anxiety Bedtime Crate</a></li><li><a href="/dachshund-akc-top-5-comeback.html">Why Dachshunds Are Suddenly Everywhere Again</a></li><li><a href="/dachshund-puppy-crate-training-wont-sleep.html">Dachshund Puppy Crate Training Won&#x27;T Sleep</a></li><li><a href="/dorgi-care-guide-dachshund-corgi-mix.html">Dorgi Care Guide Dachshund Corgi Mix</a></li></ul></section>
+      <div class="sidebar-card">
+        <div class="sidebar-title">Exercise at a Glance</div>
+        <table>
+          <tr><td><strong>Puppy</strong></td><td>5 min × age (months)</td></tr>
+          <tr><td><strong>Mini adult</strong></td><td>20–40 min/day</td></tr>
+          <tr><td><strong>Std adult</strong></td><td>45–60 min/day</td></tr>
+          <tr><td><strong>Senior</strong></td><td>15–25 min/day</td></tr>
+          <tr><td><strong>Walks/day</strong></td><td>2 (min)</td></tr>
+        </table>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-title">Related Articles</div>
+        
+      </div>
+
+      <div class="cta-box">
+        <h3>New to dachshunds?</h3>
+        <p>Our complete owner guide covers everything from feeding to training.</p>
+        Read the guide →
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
+</footer>
+</body>
+</html>
