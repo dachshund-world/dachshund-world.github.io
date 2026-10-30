@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train a Dachshund to Use a Dog Ramp (No More Jumping)</title>
+<meta name="description" content="How to train a dachshund to use a dog ramp up and down: a slope and next-step tool, a 5-stage plan, and how to stop the jump off the couch for good.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dachshund-world.github.io/train-dachshund-use-dog-ramp.html">
+
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; line-height: 1.8; color: #1a1a2e; background: #f7f7f7; }
+  a { color: #9a3412; text-decoration: none; } a:hover { text-decoration: underline; }
+
+  .topbar { background: #9a3412; color: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 54px; }
+  .topbar-brand { font-size: 1.1rem; font-weight: 700; color: #fff; }
+  .topbar-nav { display: flex; gap: 20px; } .topbar-nav a { color: rgba(255,255,255,.9); font-size: .9rem; }
+
+  .breadcrumb { max-width: 1120px; margin: 14px auto 0; padding: 0 20px; font-size: .83rem; color: #777; }
+  .breadcrumb a { color: #9a3412; }
+
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2c2c4a 100%); color: #fff; padding: 40px 20px 36px; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; }
+  .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; opacity: .65; margin-bottom: 10px; }
+  .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; max-width: 760px; }
+  .hero .lead { margin-top: 14px; opacity: .87; max-width: 680px; font-size: 1.05rem; }
+  .meta-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .meta-pill { background: rgba(255,255,255,.13); padding: 5px 14px; border-radius: 20px; font-size: .8rem; }
+
+  .wrap { max-width: 1120px; margin: 28px auto; padding: 0 20px 56px; display: grid; grid-template-columns: 1fr 300px; gap: 28px; }
+  @media (max-width: 720px) { .wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+  .content { background: #fff; border-radius: 10px; padding: 34px 38px; box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+  @media (max-width: 600px) { .content { padding: 22px 18px; } }
+
+  h2 { font-size: 1.28rem; color: #9a3412; margin: 34px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0cec4; }
+  h2:first-of-type { margin-top: 0; }
+  h3 { font-size: 1.04rem; color: #333; font-weight: 700; margin: 22px 0 10px; }
+  p { margin-bottom: 14px; }
+  ul, ol { margin: 0 0 16px 22px; } li { margin-bottom: 8px; }
+
+  .hero-img { width: 100%; border-radius: 8px; margin: 0 0 24px; display: block; }
+  .img-caption { font-size: .8rem; color: #888; margin: -18px 0 24px; text-align: center; }
+
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: .92rem; }
+  th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid #ece8e8; }
+  th { background: #9a3412; color: #fff; font-weight: 600; }
+  tr:nth-child(even) { background: #fdf8f6; }
+
+  .tip { background: #fef9ec; border-left: 4px solid #f5a623; padding: 14px 18px; margin: 20px 0; font-size: .93rem; border-radius: 0 6px 6px 0; }
+  .warning { background: #fdecea; border-left: 4px solid #e74c3c; padding: 14px 18px; margin: 20px 0; font-size: .93rem; border-radius: 0 6px 6px 0; }
+  .highlight-box { background: #f0f7ff; border-left: 5px solid #2980b9; padding: 18px 22px; margin: 22px 0; border-radius: 0 8px 8px 0; }
+  .highlight-box strong { display: block; font-size: .76rem; text-transform: uppercase; letter-spacing: .07em; color: #1a5f8a; margin-bottom: 8px; }
+
+  .faq details { border: 1px solid #ece8e8; border-radius: 8px; margin-bottom: 10px; }
+  .faq summary { padding: 14px 18px; font-weight: 600; cursor: pointer; list-style: none; font-size: .96rem; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq details[open] summary { border-bottom: 1px solid #ece8e8; color: #9a3412; }
+  .faq .answer { padding: 14px 18px; font-size: .92rem; color: #444; line-height: 1.7; }
+
+  .sidebar-card { background: #fff; border-radius: 10px; padding: 22px; box-shadow: 0 2px 8px rgba(0,0,0,.07); margin-bottom: 20px; }
+  .sidebar-title { font-size: .93rem; font-weight: 700; color: #9a3412; margin-bottom: 14px; text-transform: uppercase; letter-spacing: .04em; }
+  .related-links { list-style: none; margin: 0; padding: 0; }
+  .related-links li { padding: 9px 0; border-bottom: 1px solid #f2eeee; font-size: .92rem; }
+  .related-links li:last-child { border: none; }
+
+  .exercise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0 24px; }
+  @media (max-width: 500px) { .exercise-grid { grid-template-columns: 1fr; } }
+  .exercise-card { background: #fdf8f6; border: 1px solid #f0cec4; border-radius: 8px; padding: 16px; }
+  .exercise-card .age { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: #9a3412; font-weight: 700; margin-bottom: 6px; }
+  .exercise-card .mins { font-size: 1.5rem; font-weight: 800; color: #1a1a2e; }
+  .exercise-card .desc { font-size: .86rem; color: #555; margin-top: 4px; }
+
+  .cta-box { background: linear-gradient(135deg, #9a3412, #9a3412); color: #fff; border-radius: 10px; padding: 24px; margin-top: 32px; text-align: center; }
+  .cta-box h3 { color: #fff; margin: 0 0 10px; font-size: 1.05rem; }
+  .cta-box p { color: rgba(255,255,255,.88); margin-bottom: 16px; font-size: .92rem; }
+  .cta-btn { display: inline-block; background: #fff; color: #9a3412; font-weight: 700; padding: 11px 26px; border-radius: 6px; font-size: .93rem; }
+
+  footer { background: #1a1a2e; color: rgba(255,255,255,.6); padding: 24px 20px; margin-top: 40px; text-align: center; font-size: .87rem; }
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+
+
+
+<style>article.content a{color:#0066cc}article.content a:visited{color:#0052a3}article.content a:hover{text-decoration:underline}</style>
+
+
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Train a Dachshund to Use a Dog Ramp, Up and Down, Without Jumping",
+  "description": "How to train a dachshund to use a dog ramp up and down: a slope and next-step tool, a 5-stage plan, and how to stop the jump off the couch for good.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Organization",
+    "name": "Dachshund World Content Editors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dachshund World"
+  },
+  "mainEntityOfPage": "https://dachshund-world.github.io/train-dachshund-use-dog-ramp.html"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to train a dachshund to use a ramp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many dachshunds learn to walk up a ramp within a few sessions, but a reliable habit of using it both ways — including when excited or unsupervised — usually takes several weeks of short daily practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why will my dachshund go up the ramp but not down?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Going down feels different: your dog is looking down a slope, and jumping is a familiar shortcut. Train the descent as a separate skill with a treat at nose height, reward generously at the bottom, and block the other exits while the habit forms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a lure or a clicker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Either works. A food lure is easiest at the start; a clicker or a marker word like \"yes\" helps you reward the exact moment your dog steps onto the ramp. Fade the lure as soon as your dog follows the movement confidently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an older dachshund learn to use a ramp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Older dogs may take longer because the jumping habit is stronger, so start with the ramp flat on the floor, keep sessions short, and block the jump while they learn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my dachshund is scared of the ramp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go back to the last stage they were comfortable with — often the ramp flat on the floor — and reward simply approaching it. Check the ramp doesn't wobble or slide, add grip, and lower the angle with a longer ramp or lower furniture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to block the couch forever?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not. Once your dog uses the ramp both ways for a week or more without you coaching, remove one blocker at a time and watch. If jumps return, put it back for a little longer."
+      }
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Teach Your Dog to Use a Ramp",
+  "description": "High Ten Dog Training shows ramp familiarization, building confidence slowly, encouraging paw placement, walking on the ramp, and safe descent training.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/tRswsKCFr4Y/hqdefault.jpg",
+  "uploadDate": "2022-08-30T00:00:00Z",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/tRswsKCFr4Y"
+}</script>
+<style>#ramp-coach select,#ramp-coach input{max-width:100%;font:inherit;padding:6px}#ramp-coach button{background:#9a3412;color:white;border:0;border-radius:5px;padding:10px 16px;cursor:pointer;font:inherit}</style>
+<!--dachshund-sticky-sidebar--><!--/dachshund-sticky-sidebar-->
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Train a Dachshund to Use a Dog Ramp (No More Jumping)">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dachshund-world.github.io/train-dachshund-use-dog-ramp.html">
+<meta property="og:description" content="How to train a dachshund to use a dog ramp up and down: a slope and next-step tool, a 5-stage plan, and how to stop the jump off the couch for good.">
+<meta property="og:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Train a Dachshund to Use a Dog Ramp (No More Jumping)">
+<meta name="twitter:description" content="How to train a dachshund to use a dog ramp up and down: a slope and next-step tool, a 5-stage plan, and how to stop the jump off the couch for good.">
+<meta name="twitter:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
+<!-- social-cards:end -->
+<style>.hero-inner.with-photo{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:48px;grid-template-rows:auto auto 1fr;align-items:start}.hero-inner.with-photo>*{grid-column:1}.hero-inner.with-photo>.hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center}.hero-photo img{display:block;width:100%;height:auto;border-radius:8px}.hero-photo figcaption{font-size:11px;color:inherit;opacity:.75;margin-top:4px}@media(max-width:860px){.hero-inner.with-photo{display:block}.hero-photo{display:none}}</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #9a3412;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #7b290e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
+a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
+/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
+.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Courier New', 'Lucida Console', monospace}body h1,body h2,body h3{font-family:'Courier New', 'Lucida Console', monospace}</style>
+<style id="sc-dachshund-design">
+:root{--p:#fff8ec;--i:#3a2414;--m:#6e5642;--l:#f0dcc0;--d:#5a2e14;--od:#fff1dc;--a:#f2a541;--ai:#8a4a12;--card:#fffdf8;--bar:#f2a541;--bart:#3a2414;--r:10px;--hf:'Trebuchet MS',Arial,sans-serif;--bf:Verdana,Geneva,sans-serif;--p2:#fdebd1}
+body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
+header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
+header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
+header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:none}
+header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
+header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
+header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
+.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
+.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
+.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:none;text-wrap:balance}
+.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
+.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
+.sd-art{min-height:220px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23f2a541'%3E%3Cellipse cx='20' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='44' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='9' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='55' cy='34' rx='5' ry='7'/%3E%3Cpath d='M32 28c-10 0-18 12-18 20 0 6 6 8 10 6 4-2 6-2 8-2s4 0 8 2c4 2 10 0 10-6 0-8-8-20-18-20z'/%3E%3C/g%3E%3C/svg%3E") 0 0/56px 56px repeat}
+.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
+.main-content>:not(article){grid-column:1/-1}
+.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
+.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
+.main-content>article h2 a::after{content:"";position:absolute;inset:0}
+.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
+.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
+.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
+.sidebar-about strong{color:var(--i)}
+.hero{background:#5a2e14!important;color:#fff1dc!important;border-bottom:4px solid var(--a)}
+.hero h1{color:#fff1dc!important;letter-spacing:-.02em;text-transform:none}.hero p{color:#fff1dc!important;opacity:.9}
+.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
+.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
+.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
+.article th{background:var(--p2)!important;color:var(--i)!important}
+.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
+.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
+.wrap .panel h1{color:var(--i);text-transform:none}
+footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
+footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
+
+.sd-cover{display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:end;padding:40px 36px;background:var(--p2);border-left:12px solid var(--a);color:var(--i)}
+.sd-cover .intro{color:var(--m);opacity:1}
+.sd-art{min-height:220px;border-radius:var(--r);background-color:var(--d)}
+.main-content>article:first-of-type{grid-column:1/-1;background:var(--d)!important;border-color:var(--d)!important;padding:34px!important}
+.main-content>article:first-of-type h2{font-size:2rem!important;color:var(--od)!important}
+.main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:var(--od)!important}
+.main-content>article:first-of-type p{color:var(--od)!important;opacity:.85}
+.main-content>article:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
+@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
+header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
+.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
+.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
+.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style>
+<style id="sc-sticky-sidebar">
+@media(min-width:901px){
+.page-wrap,.layout,.wrap{align-items:start!important;overflow:visible!important}
+aside.sidebar{position:sticky!important;top:88px!important;align-self:start!important;max-height:calc(100vh - 104px);max-height:calc(100dvh - 104px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin}
+}
+</style>
+</head>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Dachshund Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › <a href="/blog.html">Blog</a> › Dachshund Ramp Training
+</div>
+
+<section class="hero"><div class="hero-inner with-photo"><div class="kicker">Breed Guide · Training and Home Setup</div><h1>How to Train a Dachshund to Use a Dog Ramp, Up and Down, Without Jumping</h1><p class="lead">From a ramp your dog ignores to the way they get on and off the couch: a staged plan with clear progress markers.</p><div class="meta-pills"><span class="meta-pill">Up and down as two skills</span><span class="meta-pill">Slope and next-step tool</span><span class="meta-pill">Reward-based</span></div>
+    <figure class="hero-photo"><img src="/assets/dachshund-world-home.webp" alt="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration" width="1200" height="800" loading="lazy" decoding="async"><figcaption>AI-generated illustration.</figcaption></figure>
+  </div></section>
+
+<main>
+  <div class="wrap" data-follow-parent="true">
+    <article class="content">
+<p>If you want to train a dachshund to use a dog ramp, the real goal isn't getting them up onto the couch — it's getting them to come back down the same way, every time, even when the doorbell rings. Most owners discover the second part is the hard one: the ramp gets used on the way up, and the dog still launches off the cushion on the way down. This guide turns that "ramp that doesn't work" into a habit you can see improving week by week.</p>
+<div class="highlight-box"><strong>Quick answer</strong><p>Teach the ramp flat on the floor first, then raise it in small steps, rewarding every paw on the surface. Train the way down as its own skill — down is where most dachshunds still jump. Block every other exit from the couch or bed while the habit forms, reward at the bottom of the ramp, and practice in short 3–5 minute sessions. Most dogs move from hesitant to reliable over a few weeks, not a single afternoon.</p></div>
+
+<h2>Where is your dachshund on the ramp journey?</h2>
+<p>Enter your ramp and furniture measurements and pick your dog's current stage. The tool works out the slope and gives you the next exercise plus a clear sign that it's time to move on. Nothing is saved or sent.</p>
+<div class="tip" id="ramp-coach">
+<p><label for="rc-height"><strong>Height of the couch or bed seat (inches)</strong></label><br><input type="number" id="rc-height" min="4" max="48" value="18"></p>
+<p><label for="rc-length"><strong>Length of the ramp surface (inches)</strong></label><br><input type="number" id="rc-length" min="12" max="120" value="60"></p>
+<p><label for="rc-stage"><strong>What does your dog do right now?</strong></label><br><select id="rc-stage">
+<option value="avoid">Won't step on the ramp at all</option>
+<option value="flat">Walks on it when it's flat on the floor</option>
+<option value="up">Goes up the ramp with a treat, but not on their own</option>
+<option value="jumpdown" selected>Uses the ramp up, but still jumps down</option>
+<option value="both">Uses it both ways when I'm watching</option>
+<option value="alone">Uses it both ways even when I'm not there</option>
+</select></p>
+<button type="button" id="rc-go">Show my next step</button>
+<div id="rc-result" role="status" aria-live="polite"></div>
+<noscript><p>Without JavaScript: start with the ramp flat on the floor, raise it in small steps, and train the way down as a separate skill, rewarding at the bottom of the ramp.</p></noscript>
+</div>
+<p>The slope labels in the tool are our own training categories, not an industry standard: the lower the angle, the easier it is for a hesitant dog to learn. If your dog keeps balking, a longer ramp or a lower piece of furniture to start with often helps more than extra treats.</p>
+<p>To see what calm, stepwise ramp training looks like, this video from High Ten Dog Training walks through familiarizing a dog with the ramp, building confidence slowly, encouraging paw placement, and — importantly — safe descent training.</p>
+<div style="position:relative;width:100%;aspect-ratio:16/9;margin:18px 0"><iframe src="https://www.youtube-nocookie.com/embed/tRswsKCFr4Y" loading="lazy" title="High Ten Dog Training: Teach your dog to use a ramp" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>Why does my dachshund still jump off the couch with a ramp there?</h2>
+<p>Because jumping down is an old, well-rehearsed habit and the ramp is a new, unfamiliar option. Going up the ramp gets rewarded by reaching the couch; going down has no built-in reward, so the fastest route — a jump — wins.</p>
+<p>Think about what your dog has practiced. A dachshund that has hopped off the sofa hundreds of times has a strong habit, and the ramp hasn't yet earned a place in that routine. Owners often train the climb, celebrate, and stop there. The descent never gets taught, so the dog does what it has always done.</p>
+<h3>The three usual reasons</h3>
+<ul>
+<li><strong>The way down was never trained.</strong> Up and down feel different to a dog: going down means looking down a slope, which many dogs find less comfortable at first.</li>
+<li><strong>The jump is still available.</strong> If the couch has an open edge, the shortest route to the floor is the one your dog takes — especially when excited.</li>
+<li><strong>The ramp is in the wrong spot.</strong> If your dog usually exits toward the door or toward you, a ramp at the far end of the couch is simply out of the way.</li>
+</ul>
+<h3>Why it's worth the effort</h3>
+<p>Cornell University's Riney Canine Health Center lists dachshunds among breeds predisposed to spinal disc problems and, among its everyday suggestions, recommends <a href="https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/chondrodystrophy-and-intervertebral-disc-disease-cddyivdd" rel="noopener noreferrer">providing steps or ramps to reduce jumping on and off objects</a>. A ramp can't promise anything on its own — but only a ramp your dog actually uses, both ways, can do the job you bought it for. Our wider guide to <a href="/can-dachshunds-use-stairs.html">dachshunds, stairs, ramps and gates at home</a> covers the rest of the home setup.</p>
+
+<h2>Before and after: what a "working" ramp looks like</h2>
+<p>A transformed ramp habit isn't about one perfect trip. It's about what your dog chooses when nobody is coaching them.</p>
+<table><caption>Ramp habits before and after training</caption><thead><tr><th>Situation</th><th>Before training</th><th>After training</th></tr></thead><tbody>
+<tr><td>Getting onto the couch</td><td>Jumps, scrabbles, or waits to be lifted</td><td>Walks to the ramp and climbs it without a cue</td></tr>
+<tr><td>Getting off the couch</td><td>Leaps off the nearest edge</td><td>Turns around and walks down the ramp</td></tr>
+<tr><td>Doorbell or visitor arrives</td><td>Launches off the cushion toward the door</td><td>Takes the ramp, even if quickly</td></tr>
+<tr><td>Owner leaves the room</td><td>Jumps down to follow</td><td>Uses the ramp to follow</td></tr>
+<tr><td>Ramp itself</td><td>Sniffed, avoided, or treated as furniture</td><td>Treated as "the way" on and off</td></tr>
+<tr><td>Your role</td><td>Lifting, blocking, calling "no!"</td><td>Occasional praise and a treat at the bottom</td></tr>
+</tbody></table>
+
+<h2>How do you train a dachshund to use a ramp step by step?</h2>
+<p>Use small, rewarded steps: flat ramp first, then low height, then full height, then the way down, then real-life distractions. Each stage lasts as long as your dog needs — usually a few days.</p>
+<p>This step-by-step approach is what trainers call shaping. As the <a href="https://en.wikipedia.org/wiki/Shaping_(psychology)" rel="noopener noreferrer">Wikipedia article on shaping</a> explains, it means reinforcing successive approximations that come closer and closer to the target behavior — a method introduced by B. F. Skinner and later extended to dogs. For a ramp, the "approximations" are one paw, two paws, the whole dog, a little height, more height, and finally the descent.</p>
+<h3>Stage 1 — Make the ramp boring (days 1–3)</h3>
+<ol>
+<li>Lay the ramp flat on the floor in a room your dog likes. If it folds, unfold it so it's stable and doesn't wobble or slide.</li>
+<li>Scatter a few small treats on and around it. Let your dog sniff and explore — no luring, no pushing.</li>
+<li>Reward any paw on the ramp. Then two paws. Then walking across it.</li>
+<li><strong>Progress marker:</strong> your dog walks over the flat ramp without hesitating to get a treat on the other side.</li>
+</ol>
+<h3>Stage 2 — Add a little height (days 3–7)</h3>
+<ol start="5">
+<li>Rest the top end on something low and stable — a thick book, a folded blanket, or the lowest step of a dog stair.</li>
+<li>Lure your dog up with a treat held at their nose height, moving slowly. Reward at the top.</li>
+<li>Now lure them back down the same way and reward at the bottom. Do both directions every session.</li>
+<li><strong>Progress marker:</strong> your dog goes up and down the low ramp following your hand, with loose body language.</li>
+</ol>
+<h3>Stage 3 — Full height, going up (week 2)</h3>
+<ol start="9">
+<li>Place the ramp against the couch or bed. Push it firmly against the furniture so there's no gap and no sliding.</li>
+<li>Lure your dog up. Reward on the couch, then immediately go to Stage 4 — don't let the couch become the place where the session ends with a jump.</li>
+<li>Start adding a cue word ("ramp" or "walk up") just as your dog starts climbing.</li>
+</ol>
+<h3>Stage 4 — Train the way down (week 2–3)</h3>
+<ol start="12">
+<li>With your dog on the couch, stand at the bottom of the ramp. Hold a treat at their nose and guide them to turn toward the ramp.</li>
+<li>Reward generously at the bottom — this is the "paycheck" that makes the ramp worth it. Use something better than kibble.</li>
+<li>Gently block the jump with your body or a hand near the edge if your dog starts to leap. Don't scold; just make the ramp the easy option.</li>
+<li><strong>Progress marker:</strong> your dog turns toward the ramp on their own when you stand near the bottom.</li>
+</ol>
+<h3>Stage 5 — Make it a habit (weeks 3–6)</h3>
+<ol start="16">
+<li>Practice getting off for everyday reasons: dinner, walks, someone at the door. Reward at the bottom every time at first, then every second or third time.</li>
+<li>Practice when you're across the room, then when you leave the room for a few seconds.</li>
+<li><strong>Progress marker:</strong> your dog uses the ramp both ways when you're not coaching them.</li>
+</ol>
+<div class="tip"><p><strong>Keep sessions short:</strong> three to five minutes, a few times a day, ending on a success. A dachshund who's having fun learns faster than one who's being drilled. For calm reward ideas between sessions, see our guide to <a href="/dachshund-toys-enrichment.html">dachshund toys and enrichment</a>.</p></div>
+
+<h2>How do you stop the jump while the habit is forming?</h2>
+<p>Block every exit except the ramp, and supervise when you can't. The fewer jumps your dog practices during training, the faster the ramp becomes their default.</p>
+<h3>Set up the furniture</h3>
+<ul>
+<li><strong>Close off the open edges.</strong> Cushions stood on end, an ottoman, or a small baby gate along the front of the couch leave the ramp as the only way down.</li>
+<li><strong>Put the ramp where your dog wants to go.</strong> Usually the end nearest the door, the kitchen, or your usual chair.</li>
+<li><strong>Use a non-slip surface.</strong> A carpeted or rubber-topped ramp and a rug at the bottom help a hesitant dog feel secure.</li>
+<li><strong>Remove access when you're away.</strong> Close the door or use a gate until the habit is reliable. A comfortable bed on the floor gives your dog a good alternative.</li>
+</ul>
+<h3>Teach a "wait" for exciting moments</h3>
+<p>Doorbells and arrivals cause most remaining jumps. Teach your dog to "wait" on the couch for a second before you invite them down the ramp. Practice with a pretend knock before trying it with real visitors. If arrivals trigger a lot of noise, our calm plan for <a href="/dachshund-excessive-barking.html">dachshund excessive barking</a> pairs well with this exercise.</p>
+
+<h2>Is a ramp or pet stairs easier for a dachshund to learn?</h2>
+<p>For most dachshunds, a ramp with a gentle slope is easier to learn and more natural for their long body than steps. Stairs take less floor space but require more coordination on each step.</p>
+<p>The choice often comes down to your home. A low bed and a big living room suit a long ramp; a high bed in a small bedroom may only fit steps. Either way, the training method is the same: start low, reward every stage, and teach the way down separately. If you have a puppy, starting early while habits are still forming is the easiest path — our <a href="/dachshund-first-time-owner-guide.html">first-time dachshund owner guide</a> helps you build these routines from day one.</p>
+<h3>What to look for in a ramp you'll train on</h3>
+<ul>
+<li>Stable: it doesn't slide, wobble, or flex under your dog's weight.</li>
+<li>Grippy: carpet, rubber, or ridges along the full length.</li>
+<li>Long enough for a gentle slope to your furniture's height — use the tool above to check.</li>
+<li>Wide enough that your dog doesn't feel they might step off the edge.</li>
+<li>Low or no gap at the top where it meets the couch or bed.</li>
+</ul>
+
+<h2>Common mistakes that keep dachshunds jumping</h2>
+<ul>
+<li><strong>Training only the way up.</strong> Up is the easy half. The descent is the skill that matters.</li>
+<li><strong>Starting at full height.</strong> A steep, unfamiliar ramp scares many dogs. Go flat, then low, then full height.</li>
+<li><strong>Rewarding on the couch only.</strong> Put your best treats at the bottom of the ramp.</li>
+<li><strong>Leaving the jump open.</strong> Every jump is practice for the old habit. Block the edges while training.</li>
+<li><strong>Lifting your dog off "just this once."</strong> Skipping the ramp teaches that waiting gets a lift.</li>
+<li><strong>Scolding a jump.</strong> Fear makes ramp training slower. Calmly redirect and make the ramp more rewarding instead.</li>
+<li><strong>Slippery or unstable ramps.</strong> A single slide can undo a week of progress. Fix grip and stability first.</li>
+<li><strong>Long sessions.</strong> Three to five minutes beats a 30-minute marathon.</li>
+<li><strong>Stopping rewards too soon.</strong> Fade treats gradually, not overnight, once the habit is solid.</li>
+</ul>
+
+<h2>Your 6-week ramp progress checklist</h2>
+<p>Tick off each milestone as your dog reaches it. Moving through it slower is completely normal — the order matters more than the speed.</p>
+<ul>
+<li>☐ Walks across the flat ramp on the floor</li>
+<li>☐ Goes up and down a low ramp following a treat</li>
+<li>☐ Climbs the full-height ramp with a lure</li>
+<li>☐ Walks down the full-height ramp with a lure</li>
+<li>☐ Climbs the ramp on cue without a lure</li>
+<li>☐ Turns toward the ramp to get down on their own</li>
+<li>☐ Uses the ramp down when the doorbell rings</li>
+<li>☐ Uses the ramp both ways when you're out of the room</li>
+<li>☐ Edge blockers removed and the habit holds for a week</li>
+</ul>
+<p>Keep a simple note on your phone: date, stage, and how many jumps you saw. Watching that number fall is the clearest sign the transformation is happening.</p>
+
+<section class="faq"><h2>Dachshund ramp training FAQ</h2>
+<details><summary>How long does it take to train a dachshund to use a ramp?</summary><div class="answer">Many dachshunds learn to walk up a ramp within a few sessions, but a reliable habit of using it both ways — including when excited or unsupervised — usually takes several weeks of short daily practice.</div></details>
+<details><summary>Why will my dachshund go up the ramp but not down?</summary><div class="answer">Going down feels different: your dog is looking down a slope, and jumping is a familiar shortcut. Train the descent as a separate skill with a treat at nose height, reward generously at the bottom, and block the other exits while the habit forms.</div></details>
+<details><summary>Should I use a lure or a clicker?</summary><div class="answer">Either works. A food lure is easiest at the start; a clicker or a marker word like "yes" helps you reward the exact moment your dog steps onto the ramp. Fade the lure as soon as your dog follows the movement confidently.</div></details>
+<details><summary>Can an older dachshund learn to use a ramp?</summary><div class="answer">Yes. Older dogs may take longer because the jumping habit is stronger, so start with the ramp flat on the floor, keep sessions short, and block the jump while they learn.</div></details>
+<details><summary>What if my dachshund is scared of the ramp?</summary><div class="answer">Go back to the last stage they were comfortable with — often the ramp flat on the floor — and reward simply approaching it. Check the ramp doesn't wobble or slide, add grip, and lower the angle with a longer ramp or lower furniture.</div></details>
+<details><summary>Do I need to block the couch forever?</summary><div class="answer">Usually not. Once your dog uses the ramp both ways for a week or more without you coaching, remove one blocker at a time and watch. If jumps return, put it back for a little longer.</div></details>
+</section>
+
+<h2>From jumper to ramp user</h2>
+<p>To train a dachshund to use a dog ramp, treat up and down as two separate skills, make the ramp the only easy exit, and reward at the bottom. Start flat, raise it slowly, and watch for the progress markers. A few weeks of short sessions turn a ramp your dog ignores into the way they get on and off the couch.</p>
+<div style="border-left:4px solid #9a3412;background:#fff7ed;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;"><p style="margin:0;font-size:0.93rem;color:#4b5563;"><strong style="color:#9a3412;">Dachshund World Content Editors</strong> — Reviewed before publishing. Content covering back health and IVDD receives additional scrutiny before going live.</p></div>
+<script>
+(function () {
+function g(id){ return document.getElementById(id); }
+var plan = {
+  avoid: ['Stage 1: lay the ramp flat on the floor and scatter treats on and around it. Reward any paw on it. No luring, no pushing.', 'Your dog walks over the flat ramp to reach a treat without hesitating.'],
+  flat: ['Stage 2: raise the top end a few inches on something stable. Lure up and back down, rewarding at the top and at the bottom.', 'Your dog follows your hand up and down the low ramp with a loose, wiggly body.'],
+  up: ['Stage 3: put the ramp at full height and add a cue word as your dog starts to climb. Then practice the way down straight away.', 'Your dog starts up the ramp on your cue before you show a treat.'],
+  jumpdown: ['Stage 4: train the descent on its own. Stand at the bottom, guide your dog to turn toward the ramp, and give your best treat at the bottom. Block the open couch edges meanwhile.', 'Your dog turns toward the ramp on their own when you stand near the bottom.'],
+  both: ['Stage 5: practice getting off for real reasons (dinner, walks, the door) and while you are across the room or briefly out of sight. Reward most trips at first, then every second or third.', 'Your dog uses the ramp both ways when nobody is coaching them.'],
+  alone: ['Maintenance: remove one edge blocker at a time and keep an occasional treat at the bottom of the ramp.', 'A full week with no jumps after the blockers are gone.']
+};
+function run () {
+  var h = parseFloat(g('rc-height').value), L = parseFloat(g('rc-length').value), out = '';
+  if (!(h > 0) || !(L > 0)) { g('rc-result').innerHTML = '<p>Enter both measurements in inches.</p>'; return; }
+  if (h >= L) {
+    out += '<p><strong>Slope:</strong> the ramp is shorter than the furniture is high, so it cannot reach. Choose a longer ramp or lower furniture.</p>';
+  } else {
+    var deg = Math.asin(h / L) * 180 / Math.PI, label, tip = '';
+    if (deg < 18) label = 'gentle — easiest to learn';
+    else if (deg < 25) label = 'moderate — most dogs manage with practice';
+    else if (deg < 35) { label = 'steep — harder for hesitant dogs'; tip = ' Consider a longer ramp or start training on lower furniture.'; }
+    else { label = 'very steep — likely to put your dog off'; tip = ' A longer ramp will make training much easier.'; }
+    var need = Math.ceil(h / Math.sin(18 * Math.PI / 180));
+    out += '<p><strong>Slope:</strong> about ' + deg.toFixed(0) + '° (' + label + ').' + tip + ' For a gentle slope under 18° at this height you would need a ramp of roughly ' + need + ' inches.</p>';
+  }
+  var p = plan[g('rc-stage').value];
+  out += '<p><strong>Next exercise:</strong> ' + p[0] + '</p><p><strong>Move on when:</strong> ' + p[1] + '</p><p>Keep each session to 3–5 minutes and end on a success.</p>';
+  g('rc-result').innerHTML = out;
+}
+g('rc-go').addEventListener('click', run);
+['rc-height','rc-length','rc-stage'].forEach(function (id) { g(id).addEventListener('change', run); });
+run();
+}());
+</script>
+<p class="ai-note">Dachshund World uses AI tools to assist in drafting content. All articles are reviewed by our editorial panel before publication.</p>
+</article>
+
+    <aside class="sidebar" data-follow-sidebar="existing"><section class="sidebar-panel"><h3>More Dachshund Articles</h3><ul><li><a href="/dachshund-separation-anxiety-bedtime-crate.html">Dachshund Separation Anxiety Bedtime Crate</a></li><li><a href="/dachshund-akc-top-5-comeback.html">Why Dachshunds Are Suddenly Everywhere Again</a></li><li><a href="/dachshund-puppy-crate-training-wont-sleep.html">Dachshund Puppy Crate Training Won&#x27;T Sleep</a></li><li><a href="/dorgi-care-guide-dachshund-corgi-mix.html">Dorgi Care Guide Dachshund Corgi Mix</a></li></ul></section>
+      <div class="sidebar-card">
+        <div class="sidebar-title">Exercise at a Glance</div>
+        <table>
+          <tr><td><strong>Puppy</strong></td><td>5 min × age (months)</td></tr>
+          <tr><td><strong>Mini adult</strong></td><td>20–40 min/day</td></tr>
+          <tr><td><strong>Std adult</strong></td><td>45–60 min/day</td></tr>
+          <tr><td><strong>Senior</strong></td><td>15–25 min/day</td></tr>
+          <tr><td><strong>Walks/day</strong></td><td>2 (min)</td></tr>
+        </table>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-title">Related Articles</div>
+        
+      </div>
+
+      <div class="cta-box">
+        <h3>New to dachshunds?</h3>
+        <p>Our complete owner guide covers everything from feeding to training.</p>
+        Read the guide →
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 dachshund-world.github.io &mdash; Dachshund Guide. All rights reserved.</p>
+</footer>
+</body>
+</html>
