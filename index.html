@@ -3,585 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dachshund Guide — Care, Facts &amp; National Day</title>
-<meta name="description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
+<title>Dachshund World — Teckel Field Manual for Long, Low Dogs</title>
+<meta name="description" content="Burrow-style field manual for Dachshund homes: care paths, breed facts from named sources, latest guides, and a printable back-safety home audit.">
 <link rel="canonical" href="https://dachshund-world.github.io/">
 <meta name="robots" content="index, follow">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Courier New', 'Lucida Console', monospace;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #222;
-    background: #f8f8f8;
-  }
-  a { color: #9a3412; text-decoration: none; }
-  a:hover { text-decoration: underline; color: #7b290e; }
-
-  /* ── Top bar ── */
-  .topbar {
-    background: #9a3412;
-    color: #fff;
-    padding: 0 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  }
-  .topbar-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 54px;
-  }
-  .topbar-brand {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-  .topbar-nav {
-    display: flex;
-    gap: 4px;
-    list-style: none;
-  }
-  .topbar-nav a {
-    color: rgba(255,255,255,0.88);
-    font-size: 0.88rem;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.15s;
-  }
-  .topbar-nav a:hover {
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    text-decoration: none;
-  }
-  @media(max-width:600px) {
-    .topbar-nav { display: none; }
-  }
-
-  /* ── Breadcrumb ── */
-  .breadcrumb {
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  .breadcrumb-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 8px 20px;
-    font-size: 0.82rem;
-    color: #6b7280;
-  }
-  .breadcrumb-inner a { color: #9a3412; }
-  .breadcrumb-inner span { margin: 0 5px; }
-
-  /* ── Layout wrapper ── */
-  .page-wrap {
-    max-width: 1120px;
-    margin: 28px auto;
-    padding: 0 20px 64px;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 28px;
-    align-items: start;;grid-template-columns:minmax(0, 1fr) 300px;gap:26px;padding-left:22px;padding-right:22px;}
-  @media (max-width: 700px) {
-    .page-wrap { grid-template-columns: 1fr; }
-    .sidebar { display: none; }
-  }
-
-  /* ── Main ── */
-  .main-content {
-    background: #fff;
-    border-radius: 8px;
-    padding: 28px 28px 32px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  }
-  .main-content h1 {
-    font-size: 1.75rem;
-    color: #7b290e;
-    margin-bottom: 10px;
-    line-height: 1.3;
-    border-bottom: 3px solid #9a3412;
-    padding-bottom: 12px;
-  }
-  .main-content .intro {
-    color: #555;
-    margin-bottom: 28px;
-    font-size: 1rem;
-  }
-  .article-card {
-    border: 1px solid #e5e7eb;
-    border-left: 4px solid #9a3412;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    background: #fafafa;
-    transition: box-shadow 0.2s;
-  }
-  .article-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-  .article-card h2 {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-  }
-  .article-card h2 a { color: #7b290e; }
-  .article-card .meta { color: #9ca3af; font-size: 0.8rem; margin-bottom: 6px; }
-  .article-card p { color: #555; font-size: 0.93rem; margin: 0; }
-
-  /* ── Categories ── */
-  .categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
-  .cat-tag {
-    background: #9a3412;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-
-  /* ── Sidebar ── */
-  .sidebar { position: sticky; top: 70px; }
-  .sidebar-widget {
-    background: #9a3412;
-    border-radius: 10px;
-    padding: 22px 18px;
-    color: #fff;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
-    margin-bottom: 20px;
-  }
-  .sidebar-widget h3 { font-size: 1rem; margin-bottom: 8px; font-weight: 700; }
-  .sidebar-widget p { font-size: 0.86rem; margin-bottom: 12px; opacity: 0.9; }
-  .sidebar-widget input[type="email"] {
-    width: 100%; padding: 9px 11px; border: none; border-radius: 5px;
-    font-size: 0.88rem; margin-bottom: 8px; outline: none;
-  }
-  .sidebar-widget button {
-    width: 100%; padding: 10px; background: #fff; color: #9a3412;
-    border: none; border-radius: 5px; font-weight: 700; font-size: 0.88rem;
-    cursor: pointer;
-  }
-  .sidebar-widget .disclaimer {
-    font-size: 0.7rem; opacity: 0.65; margin-top: 8px; text-align: center;
-  }
-  .sidebar-about {
-    background: #fff; border-radius: 8px; padding: 18px 16px;
-    font-size: 0.88rem; color: #444; line-height: 1.6;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    margin-bottom: 20px;
-  }
-  .sidebar-about strong { color: #7b290e; display: block; margin-bottom: 6px; font-size: 0.95rem; }
-  .sidebar-links {
-    background: #fff; border-radius: 8px; padding: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  }
-  .sidebar-links h4 { font-size: 0.9rem; color: #7b290e; margin-bottom: 10px; }
-  .sidebar-links ul { list-style: none; }
-  .sidebar-links li { padding: 4px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.86rem; }
-  .sidebar-links li:last-child { border: none; }
-  .sidebar-links a { color: #9a3412; }
-
-  /* ── Footer ── */
-  .footer {
-    background: #7b290e;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
-    padding: 24px 16px;
-    font-size: 0.82rem;
-    margin-top: 40px;
-  }
-  .footer-nav { margin-bottom: 8px; }
-  .footer-nav a {
-    color: rgba(255,255,255,0.85);
-    margin: 0 10px;
-    font-size: 0.85rem;
-  }
-
-  /* ── Bottom mobile bar (wariant bottom_mobile) ── */
-  #bottom-bar input[type="email"] { flex: 1; min-width: 0; }
-  @media (max-width: 480px) {
-    #bottom-bar span { display: none; }
-  }
-</style>
-<style id="sc-font">body{font-family:'Courier New', 'Lucida Console', monospace}body h1,body h2,body h3{font-family:'Courier New', 'Lucida Console', monospace}</style>
-<style id="site-chrome">
-:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
-[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
-/* ── Top bar ── */
-  .sc-topbar{
-    background: #9a3412;
-    color: #fff;
-    padding: 0 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  }
-.sc-topbar-inner{
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 54px;
-  }
-.sc-topbar-brand{
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-.sc-topbar-nav{
-    display: flex;
-    gap: 4px;
-    list-style: none;
-  }
-.sc-topbar-nav a{
-    color: rgba(255,255,255,0.88);
-    font-size: 0.88rem;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.15s;
-  }
-.sc-topbar-nav a:hover{
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    text-decoration: none;
-  }
-@media(max-width:600px) {
-    .sc-topbar-nav { display: none; }}
-/* ── Footer ── */
-  .sc-footer{
-    background: #7b290e;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
-    padding: 24px 16px;
-    font-size: 0.82rem;
-    margin-top: 40px;
-  }
-.sc-footer-nav{ margin-bottom: 8px; }
-.sc-footer-nav a{
-    color: rgba(255,255,255,0.85);
-    margin: 0 10px;
-    font-size: 0.85rem;
-  }
-.sc-topbar a,.sc-footer a{text-decoration:none}
-/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
-a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
-/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
-.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
-@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
-</style>
-<style id="sc-dachshund-design">
-:root{--p:#fff8ec;--i:#3a2414;--m:#6e5642;--l:#f0dcc0;--d:#5a2e14;--od:#fff1dc;--a:#f2a541;--ai:#8a4a12;--card:#fffdf8;--bar:#f2a541;--bart:#3a2414;--r:10px;--hf:'Trebuchet MS',Arial,sans-serif;--bf:Verdana,Geneva,sans-serif;--p2:#fdebd1}
-body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
-header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
-header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
-header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:none}
-header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
-header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
-header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
-.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
-.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
-.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:none;text-wrap:balance}
-.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
-.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
-.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
-.sd-art{min-height:220px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23f2a541'%3E%3Cellipse cx='20' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='44' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='9' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='55' cy='34' rx='5' ry='7'/%3E%3Cpath d='M32 28c-10 0-18 12-18 20 0 6 6 8 10 6 4-2 6-2 8-2s4 0 8 2c4 2 10 0 10-6 0-8-8-20-18-20z'/%3E%3C/g%3E%3C/svg%3E") 0 0/56px 56px repeat}
-.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
-.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
-.main-content>:not(article){grid-column:1/-1}
-.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
-.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
-.main-content>article h2 a::after{content:"";position:absolute;inset:0}
-.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
-.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
-.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
-.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
-.sidebar-about strong{color:var(--i)}
-.hero{background:#5a2e14!important;color:#fff1dc!important;border-bottom:4px solid var(--a)}
-.hero h1{color:#fff1dc!important;letter-spacing:-.02em;text-transform:none}.hero p{color:#fff1dc!important;opacity:.9}
-.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
-.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
-.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
-.article th{background:var(--p2)!important;color:var(--i)!important}
-.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
-.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
-.wrap .panel h1{color:var(--i);text-transform:none}
-footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
-footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
-
-.sd-cover{display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:end;padding:40px 36px;background:var(--p2);border-left:12px solid var(--a);color:var(--i)}
-.sd-cover .intro{color:var(--m);opacity:1}
-.sd-art{min-height:220px;border-radius:var(--r);background-color:var(--d)}
-.main-content>article:first-of-type{grid-column:1/-1;background:var(--d)!important;border-color:var(--d)!important;padding:34px!important}
-.main-content>article:first-of-type h2{font-size:2rem!important;color:var(--od)!important}
-.main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:var(--od)!important}
-.main-content>article:first-of-type p{color:var(--od)!important;opacity:.85}
-.main-content>article:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
-@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
-header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
-.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
-.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
-.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
-</style>
-<!--dachshund-sticky-sidebar--><style id="sc-sticky-sidebar">
-@media(min-width:901px){
-.page-wrap,.layout,.wrap{align-items:start!important;overflow:visible!important}
-aside.sidebar{position:sticky!important;top:88px!important;align-self:start!important;max-height:calc(100vh - 104px);max-height:calc(100dvh - 104px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin}
-}
-</style><!--/dachshund-sticky-sidebar--><!--home-photo--><style id="sc-home-photo">
-.sd-art.sd-photo{background:none!important;padding:0!important;overflow:hidden;position:relative;min-height:240px}
-.sd-art.sd-photo img{display:block;width:100%;height:100%;min-height:240px;object-fit:cover;border-radius:inherit}
-@media(max-width:760px){.sd-art.sd-photo,.sd-art.sd-photo img{min-height:200px;max-height:260px}}
-</style><!--/home-photo-->
-<style id="sidebar-follow-20261025">
-[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
-height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
-min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
-[data-follow-parent]{overflow:visible!important;align-items:start}
-.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
-width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
-[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
-.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
-background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
-.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
-.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
-.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
-overflow-wrap:anywhere;line-height:1.45}
-@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
-max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
-.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
-</style>
-
-<!-- social-cards:start -->
-<meta property="og:title" content="Dachshund Guide — Care, Facts &amp; National Day">
+<meta property="og:title" content="Dachshund World — Teckel Field Manual">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dachshund-world.github.io/">
-<meta property="og:description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta property="og:description" content="Field notes for life with a long, low dog — plus a back-safety home audit for stairs, ramps and furniture.">
 <meta property="og:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
-<meta property="og:image:secure_url" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="800">
-<meta property="og:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dachshund Guide — Care, Facts &amp; National Day">
-<meta name="twitter:description" content="Your complete resource for Dachshund lovers. Breed facts, care tips, national day celebration guide and more.">
-<meta name="twitter:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
-<meta name="twitter:image:alt" content="Red smooth Dachshund standing in autumn leaves on a forest path - AI-generated illustration">
-<!-- social-cards:end -->
-<link rel="stylesheet" href="/assets/dw-course.css">
+<link rel="stylesheet" href="/assets/dw-burrow.css">
 </head>
-<body class="dw-course dw-home" data-dw-course="1">
-<header class="dw-header"><div class="dw-shell dw-head-row"><a class="dw-wordmark" href="/">dachshund<span> world.</span></a><nav class="dw-desktop" aria-label="Main navigation"><a href="/care.html">Life with a dachshund</a><a href="/blog.html">The journal</a><a href="/#gift-finder" data-dw-cta="header">Gift finder ↗</a></nav><details class="dw-mobile" id="dw-mobile-menu"><summary><span class="dw-menu-label">Menu</span><span class="dw-close-label">Close</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary><div class="dw-mobile-panel"><p class="dw-eyebrow">A LITTLE LONG-DOG COMPANY</p><nav aria-label="Mobile navigation"><a href="/care.html">Life with a dachshund</a><a href="/blog.html">The journal</a><a href="/#gift-finder" data-dw-cta="header">Gift finder ↗</a></nav><div class="dw-small-links"><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></div></header>
-
-
-<!-- TOP BAR -->
-
-
-
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="breadcrumb-inner">
-    <a href="/">Home</a><span>›</span> Dachshund Guide
+<body class="dw-burrow-site dw-home">
+<header class="dw-mast">
+  <div class="dw-burrow" aria-hidden="true"><span class="dw-layer dw-humus"></span><span class="dw-layer dw-loam"></span><span class="dw-layer dw-sand"></span><span class="dw-layer dw-clay"></span><span class="dw-tunnel"></span></div>
+  <div class="dw-shell dw-mast-row">
+    <a class="dw-mark" href="/">Dachshund <em>World</em><span class="dw-bone" aria-hidden="true"></span></a>
+    <nav class="dw-nav" aria-label="Main navigation">
+      <a href="/care.html">Field notes</a>
+      <a href="/blog.html">Manual entries</a>
+      <a class="dw-nav-cta" href="/dachshund-back-safety-audit.html" data-dw-from="nav">Back-safety audit</a>
+    </nav>
+    <details class="dw-menu" id="dw-mobile-menu">
+      <summary><span class="dw-menu-open">Strata</span><span class="dw-menu-close">Close</span></summary>
+      <div class="dw-menu-panel">
+        <p class="dw-kicker">TECKEL FIELD MANUAL</p>
+        <nav aria-label="Mobile navigation">
+          <a href="/care.html">Field notes</a>
+          <a href="/blog.html">Manual entries</a>
+          <a href="/dachshund-back-safety-audit.html" data-dw-from="nav_mobile">Back-safety audit</a>
+        </nav>
+        <div class="dw-menu-small"><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
+      </div>
+    </details>
   </div>
-</div>
-
-<!-- PAGE LAYOUT -->
-<section class="dw-hero dw-shell"><div><p class="dw-eyebrow">THE LITTLE LONG-DOG JOURNAL</p><h1>Short legs.<br>Long stories.<br><em>Good company.</em></h1><p class="dw-lead">A corner of the internet for life with a dachshund — and the people who wouldn't have it any other way.</p><div class="dw-actions"><a class="dw-button" href="/blog.html">Explore the journal <span aria-hidden="true">↗</span></a><a class="dw-text-link" data-dw-cta="hero" href="/#gift-finder">Find a gift idea ↗</a></div></div><figure><img src="/assets/dachshund-world-home.webp" width="1200" height="800" alt="A red dachshund on an autumn woodland path; AI-generated illustration" fetchpriority="high" decoding="async"><figcaption>Existing site illustration · AI-generated, not a contributor's photograph.</figcaption></figure></section><section class="dw-shell dw-path-section"><p class="dw-eyebrow">01 / WHAT BRINGS YOU HERE?</p><div class="dw-paths"><section class="dw-path"><div class="dw-path-mark"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M12 46 50 15l38 31M23 38v40h54V38M42 78V57h18v21"/></svg></div><h2>Life with a dachshund.</h2><p>A place to start with the everyday side of long-dog life.</p><a class="dw-text-link" href="/care.html">Explore the guides ↗</a></section><section class="dw-path"><div class="dw-path-mark"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M15 15h58v65H15zM28 30h31M28 43h31M28 56h20M75 26h12v65H28V80"/></svg></div><h2>The long-dog journal.</h2><p>Read the existing stories, ideas and practical guides.</p><a class="dw-text-link" href="/blog.html">Open the journal ↗</a></section><section class="dw-path"><div class="dw-path-mark"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M15 40h70v17H15zM23 57v31h54V57M50 40v48M50 39q-39-28-25-29 22-8 25 29 3-37 25-29 14 1-25 29"/></svg></div><h2>For their dog person.</h2><p>Thoughtful gift-search ideas with a dachshund twist.</p><a class="dw-text-link" href="/#gift-finder" data-dw-cta="path">Find a gift idea ↗</a></section></div></section><section class="dw-finder-band" id="gift-finder" aria-labelledby="dw-finder-title"><div class="dw-shell"><div class="dw-finder-intro"><div><p class="dw-eyebrow">02 / THE DOXIE GIFT FINDER</p><h2 id="dw-finder-title">For someone who<br>really loves their dachshund.</h2></div><p>Choose the occasion, their style and a shopping budget. Get three gift-search ideas for the person, not the dog.</p></div><form class="dw-finder-form" hidden><div><label for="dw-occasion">What's the occasion?</label><select id="dw-occasion" name="occasion" required><option value="">Choose an occasion</option><option value="birthday">A birthday</option><option value="thank_you">A thank-you</option><option value="just_because">Just because</option></select></div><div><label for="dw-style">What's their style?</label><select id="dw-style" name="gift_style" required><option value="">Choose a style</option><option value="minimal">Understated &amp; simple</option><option value="playful">Playful &amp; colourful</option><option value="personal">Personalised</option></select></div><div><label for="dw-budget">Shopping budget</label><select id="dw-budget" name="budget_band" required><option value="">Choose a budget</option><option value="under_25">Up to $25</option><option value="25_50">$25–$50</option><option value="over_50">$50 and up</option></select></div><div class="dw-form-bottom"><button type="submit" class="dw-button">Find my gift ideas <span aria-hidden="true">↗</span></button><p>No email needed. Budgets guide your search; currency, final prices, delivery and availability are set by the shop.</p></div></form><noscript><p>This finder needs JavaScript. Browse <a href="https://www.etsy.com/search?q=dachshund+gifts" target="_blank" rel="noopener noreferrer">dachshund gift ideas on Etsy</a> instead.</p></noscript><p class="dw-finder-status" role="status" aria-live="polite"></p><h3 class="dw-results-heading" id="dw-results-heading" tabindex="-1" hidden>Your little shortlist.</h3><div class="dw-results" id="dw-gift-results" hidden></div><p class="dw-commercial-note">Shopping links open another website. Ordinary links are used unless an approved affiliate link has been configured. If a link is an affiliate link, we may earn a commission. These illustrations show gift categories, not actual products.</p></div></section>
-<div class="page-wrap" data-follow-parent="true">
-
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-
-    
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-winter-coat-fit-guide.html" style="color:#7b290e; text-decoration:none;">Dachshund Winter Coat Fit Guide: Measure &amp; Layer Right</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-11-11</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund winter coat fit guide: measure back length, chest girth and neck, choose harness-over vs harness-under, and layer by smooth, long or wire coat.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-ramp-length.html" style="color:#7b290e; text-decoration:none;">Dachshund Ramp Length: Bed and Sofa Height Calculator</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-11-10</p>
-            <p style='color:#555; margin:8px 0 0;'>How long should a dog ramp be for a dachshund? Use our calculator: bed and sofa height × slope gives the ramp length and floor space your long-backed dog needs.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-loose-leash-walking.html" style="color:#7b290e; text-decoration:none;">Dachshund Pulling on the Leash: A Loose-Leash Walking Plan for Long, Low Dogs</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-11-09</p>
-            <p style='color:#555; margin:8px 0 0;'>Teach a pulling dachshund to walk on a loose leash: pick the right harness, calm the front door, use stop-and-plant, and let the nose work for you.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/hand-strip-wirehaired-dachshund.html" style="color:#7b290e; text-decoration:none;">Hand Strip a Wirehaired Dachshund at Home: Step-by-Step</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-11-03</p>
-            <p style='color:#555; margin:8px 0 0;'>How to hand strip a wirehaired dachshund at home: coat readiness checker, tools, body-to-beard steps, pin-wire vs soft coats, and mistakes that ruin the wire.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-digging-box.html" style="color:#7b290e; text-decoration:none;">Dachshund Digging: Why They Dig and a Digging Box Plan</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-30</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund digging explained honestly: why they dig, a free digging-pattern decoder, how to build a digging box, and a 4-week plan to redirect it.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/train-dachshund-use-dog-ramp.html" style="color:#7b290e; text-decoration:none;">Train a Dachshund to Use a Dog Ramp (No More Jumping)</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-30</p>
-            <p style='color:#555; margin:8px 0 0;'>How to train a dachshund to use a dog ramp up and down: a slope and next-step tool, a 5-stage plan, and how to stop the jump off the couch for good.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/longhaired-dachshund-home-trim.html" style="color:#7b290e; text-decoration:none;">Longhaired Dachshund Trimming: Paws, Ears and Tail</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-15</p>
-            <p style='color:#555; margin:8px 0 0;'>Learn how to trim a longhaired dachshund at home with a light paw tidy, feathering checks, ear and tail guidance, plus a post-walk maintenance planner.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/wirehaired-dachshund-hand-stripping.html" style="color:#7b290e; text-decoration:none;">Wirehaired Dachshund Hand Stripping: At-Home Steps</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-15</p>
-            <p style='color:#555; margin:8px 0 0;'>Learn how to hand strip a wirehaired dachshund at home. Check coat readiness, follow the body technique, and plan care for pin-wire coats, beards, and eyebrows.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-excessive-barking.html" style="color:#7b290e; text-decoration:none;">Dachshund Excessive Barking: A Calm Training Plan</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-14</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund excessive barking feels easier to manage with a calm plan. Identify triggers, practice quiet alternatives, and use our interactive training planner.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-toys-enrichment.html" style="color:#7b290e; text-decoration:none;">Dachshund Toys: Best Picks for Mental &amp; Physical Play</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-11</p>
-            <p style='color:#555; margin:8px 0 0;'>The best toys for dachshunds: snuffle mats, puzzles, dig boxes and gentle tug that tire the brain without risking the back. Plus a free weekly toy planner.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-biting-prevention.html" style="color:#7b290e; text-decoration:none;">Why Do Dachshunds Bite? Safe Ways to Reduce Aggression</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-07</p>
-            <p style='color:#555; margin:8px 0 0;'>Why do dachshunds bite? Learn how to recognize pain, prevent risky encounters, and build a reward-based plan that gives you safer choices and your dog space.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-energy-level.html" style="color:#7b290e; text-decoration:none;">Dachshund Energy Level: How Much Exercise Do They Really Need?</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-07</p>
-            <p style='color:#555; margin:8px 0 0;'>How energetic are dachshunds? Learn how much exercise your dachshund needs by age, the best activities, and how to spot the signs you're doing too little — or too much.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-separation-anxiety-bedtime-crate.html" style="color:#7b290e; text-decoration:none;">Dachshund Separation Anxiety Bedtime Crate</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-01</p>
-            <p style='color:#555; margin:8px 0 0;'>By Dachshund World — Updated April 2025</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-puppy-crate-training-wont-sleep.html" style="color:#7b290e; text-decoration:none;">Dachshund Puppy Crate Training Won'T Sleep</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-27</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund Puppy Crate Training Won'T Sleep</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dorgi-care-guide-dachshund-corgi-mix.html" style="color:#7b290e; text-decoration:none;">Dorgi Care Guide Dachshund Corgi Mix</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-26</p>
-            <p style='color:#555; margin:8px 0 0;'>Dorgi Care Guide Dachshund Corgi Mix</p>
-        </article>
-        
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-first-time-owner-guide.html" style="color:#7b290e; text-decoration:none;">Dachshund First Time Owner Guide 2026</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-23</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund First Time Owner Guide 2026</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-akc-top-5-comeback-2026.html" style="color:#7b290e; text-decoration:none;">Why Dachshunds are back in the AKC top 5 and what first-time owners keep missing</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-22</p>
-            <p style='color:#555; margin:8px 0 0;'>Why Dachshunds are back in the AKC top 5 and what first-time owners keep missing</p>
-        </article>
-        
-        
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/can-dachshunds-use-stairs.html" style="color:#7b290e; text-decoration:none;">Can Dachshunds Use Stairs? What Owners Need to Know</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
-            <p style='color:#555; margin:8px 0 0;'>Find out when Dachshunds can use stairs, when a ramp is safer, and which warning signs mean you should stop and call your vet.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #9a3412; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/dachshund-step-in-harness.html" style="color:#7b290e; text-decoration:none;">Dachshund Step-In Harness: What to Check Before You Buy</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
-            <p style='color:#555; margin:8px 0 0;'>Dachshund Step-In Harness: What to Check Before You Buy</p>
-        </article>
-    
-  </main>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar" data-follow-sidebar="existing"><section class="dw-side-card"><p class="dw-eyebrow">FOR THEIR FAVOURITE DOG PERSON</p><h2>A little long-dog joy.</h2><p>Find a print, mug or tote idea for the dachshund lover in your life.</p><a class="dw-button" href="/#gift-finder" data-dw-cta="sidebar">Try the gift finder ↗</a></section>
-    
-    
-
-    <div class="sidebar-about">
-      <strong>About Dachshund Guide</strong>
-      Dedicated to Dachshund owners and enthusiasts. In-depth guides, care tips, and national dog day coverage.
+</header>
+<main>
+  <section class="dw-shell dw-hero">
+    <div>
+      <p class="dw-kicker">BURROW · TECKEL FIELD MANUAL</p>
+      <h1>Cross-section care for a <span>long, low dog.</span></h1>
+      <p class="dw-lead">Practical notes for stairs, ramps, coats and everyday life — drawn like a soil cutaway, not a glossy gallery.</p>
+      <div class="dw-actions">
+        <a class="dw-btn" href="/dachshund-back-safety-audit.html" data-dw-from="home_hero"><span>Run the back-safety audit</span></a>
+        <a class="dw-text" href="/blog.html">Browse manual entries</a>
+      </div>
     </div>
-
-    <div class="sidebar-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/blog.html">Latest Articles</a></li>
-        <li><a href="/care.html">Dachshund Care Guide</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/privacy.html">Privacy</a></li>
-        <li><a href="/sitemap.html">Sitemap</a></li>
-      </ul>
-      <h4>Latest articles</h4><ul><li><a href="/dachshund-winter-coat-fit-guide.html">Dachshund Winter Coat Fit Guide: Measure &amp; Layer Right</a></li><li><a href="/dachshund-ramp-length.html">Dachshund Ramp Length: Bed and Sofa Height Calculator</a></li><li><a href="/dachshund-loose-leash-walking.html">Dachshund Pulling on the Leash: A Loose-Leash Walking Plan for Long, Low Dogs</a></li><li><a href="/hand-strip-wirehaired-dachshund.html">Hand Strip a Wirehaired Dachshund at Home: Step-by-Step</a></li><li><a href="/train-dachshund-use-dog-ramp.html">Train a Dachshund to Use a Dog Ramp (No More Jumping)</a></li><li><a href="/dachshund-digging-box.html">Dachshund Digging: Why They Dig and a Digging Box Plan</a></li></ul>
+    <div class="dw-cutaway" role="img" aria-label="Drawn soil cross-section with a tunnel and a dachshund illustration">
+      <img src="/assets/dachshund-world-home.webp" width="400" height="267" alt="Red Dachshund illustration used as a field plate" fetchpriority="high" decoding="async">
+      <p class="dw-cutaway-caption">Plate I · soil cutaway with tunnel · AI illustration on file</p>
     </div>
-  </aside>
+  </section>
 
-</div>
+  <section class="dw-shell dw-paths" aria-labelledby="dw-paths-title">
+    <p class="dw-kicker">01 · THREE TUNNEL MOUTHS</p>
+    <h2 id="dw-paths-title" class="visually-hidden" style="position:absolute;left:-9999px">Three paths</h2>
+    <div class="dw-path-grid">
+      <section class="dw-portal">
+        <h2>Field notes</h2>
+        <p>Everyday setup: home, handling, coats and routines for a Dachshund household.</p>
+        <a class="dw-text" href="/care.html">Open care guides</a>
+      </section>
+      <section class="dw-portal">
+        <h2>Manual entries</h2>
+        <p>Newest guides first — ramps, coats, digging boxes, leash work and more.</p>
+        <a class="dw-text" href="/blog.html">Read the journal</a>
+      </section>
+      <section class="dw-portal">
+        <h2>Back-safety audit</h2>
+        <p>Walk the stairs, sofa, bed and floors once. Get a prioritised fix list you can print.</p>
+        <a class="dw-text" href="/dachshund-back-safety-audit.html" data-dw-from="home_path">Start the audit</a>
+      </section>
+    </div>
+  </section>
 
-<!-- FULL-WIDTH EMAIL BLOCK (wszystkie blogi) -->
+  <section class="dw-cores" aria-labelledby="dw-facts-title">
+    <div class="dw-shell">
+      <p class="dw-kicker">02 · SOIL-CORE FACTS</p>
+      <h2 id="dw-facts-title" style="margin:0 0 1.2rem;font-size:clamp(1.8rem,3.5vw,2.6rem)">Numbers we can source — nothing invented.</h2>
+      <div class="dw-core-row">
+        <article class="dw-core">
+          <div class="dw-core-band">Humus</div>
+          <div class="dw-core-band">AKC top 5<span style="display:block;font-size:1rem;margin-top:.4rem">most popular breeds, 2026</span></div>
+          <div class="dw-core-band"><cite>American Kennel Club ranking coverage on this site</cite></div>
+        </article>
+        <article class="dw-core">
+          <div class="dw-core-band">Loam</div>
+          <div class="dw-core-band">5 stages<span style="display:block;font-size:1rem;margin-top:.4rem">ramp training plan</span></div>
+          <div class="dw-core-band"><cite>Train-a-ramp guide · treat each step</cite></div>
+        </article>
+        <article class="dw-core">
+          <div class="dw-core-band">Sand</div>
+          <div class="dw-core-band">VCA note<span style="display:block;font-size:1rem;margin-top:.4rem">limit stair runs &amp; furniture jumps</span></div>
+          <div class="dw-core-band"><cite>VCA Dachshund breed profile · linked in stairs guide</cite></div>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <section class="dw-shell dw-trail" aria-labelledby="dw-trail-title">
+    <p class="dw-kicker">03 · DIG TRAIL · NEWEST FIRST</p>
+    <h2 id="dw-trail-title" style="margin:0 0 1rem;font-size:clamp(1.8rem,3.5vw,2.6rem)">Latest field entries</h2>
+    <div class="dw-trail-list"><a class="dw-dig" href="/dachshund-winter-coat-fit-guide.html"><span class="dw-dig-date">2026-11-11</span><span><h3 class="dw-dig-title">Winter coat fit: measure the long back</h3><p class="dw-dig-blurb">Measure back length, chest and neck; choose harness-over vs harness-under by coat type.</p></span><span class="dw-dig-arrow" aria-hidden="true">↳</span></a>
+<a class="dw-dig" href="/dachshund-ramp-length.html"><span class="dw-dig-date">2026-11-10</span><span><h3 class="dw-dig-title">Ramp length for bed and sofa height</h3><p class="dw-dig-blurb">Height × slope gives the ramp length and floor space a long-backed dog needs.</p></span><span class="dw-dig-arrow" aria-hidden="true">↳</span></a>
+<a class="dw-dig" href="/dachshund-loose-leash-walking.html"><span class="dw-dig-date">2026-11-09</span><span><h3 class="dw-dig-title">Loose-leash walking for long, low dogs</h3><p class="dw-dig-blurb">Harness choice, door calm, stop-and-plant, and letting the nose work for you.</p></span><span class="dw-dig-arrow" aria-hidden="true">↳</span></a>
+<a class="dw-dig" href="/hand-strip-wirehaired-dachshund.html"><span class="dw-dig-date">2026-11-03</span><span><h3 class="dw-dig-title">Hand strip a wirehaired coat at home</h3><p class="dw-dig-blurb">Coat readiness, tools, body-to-beard steps, and mistakes that ruin the wire.</p></span><span class="dw-dig-arrow" aria-hidden="true">↳</span></a>
+<a class="dw-dig" href="/train-dachshund-use-dog-ramp.html"><span class="dw-dig-date">2026-10-30</span><span><h3 class="dw-dig-title">Train the ramp — no more couch leaps</h3><p class="dw-dig-blurb">A slope tool plus a five-stage plan to replace jumping with a steady climb.</p></span><span class="dw-dig-arrow" aria-hidden="true">↳</span></a>
+<a class="dw-dig" href="/dachshund-digging-box.html"><span class="dw-dig-date">2026-10-30</span><span><h3 class="dw-dig-title">Digging box plan for busy noses</h3><p class="dw-dig-blurb">Why they dig, a pattern decoder, and a four-week redirect to a legal dig zone.</p></span><span class="dw-dig-arrow" aria-hidden="true">↳</span></a></div>
+  </section>
 
-<!-- FOOTER -->
-
-
-
-
-
-<footer class="dw-footer"><div class="dw-shell"><div class="dw-footer-top"><div><p class="dw-eyebrow">ONE MORE LITTLE THING</p><h2>A gift with a long-dog twist.</h2><p>A birthday, a thank-you, or just because. Start with three choices.</p></div><a class="dw-button" href="/#gift-finder" data-dw-cta="footer">Find a gift idea <span aria-hidden="true">↗</span></a></div><nav class="dw-footer-nav" aria-label="Footer navigation"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Publishing standards</a><a href="/disclosure.html">Funding disclosure</a><a href="/privacy.html">Privacy</a><a href="/sitemap.html">Sitemap</a></nav><button type="button" class="dw-settings" id="seo-analytics-settings" hidden>Analytics preferences</button><p id="seo-analytics-status" role="status"></p><small>© 2026 Dachshund World. Gift ideas are starting points, not product reviews.</small></div></footer><section class="dw-consent" id="seo-analytics-panel" aria-labelledby="seo-analytics-title" hidden><h2 id="seo-analytics-title">Optional analytics</h2><p>Allow Google Analytics to measure page visits and use of the gift finder? The finder works either way. No advertising features are enabled by this integration.</p><div class="dw-actions"><button type="button" class="dw-button dw-decline" data-analytics-choice="denied">Decline analytics</button><button type="button" class="dw-button" data-analytics-choice="granted">Allow analytics</button></div><p>You can change your choice using Analytics preferences in the footer.</p></section>
-<script defer src="/assets/dw-config.js"></script><script defer src="/assets/dw-analytics.js"></script><script defer src="/assets/dw-site.js"></script>
+  <section class="dw-shell dw-method" aria-labelledby="dw-method-title">
+    <p class="dw-kicker">04 · HOW THIS MANUAL WORKS</p>
+    <h2 id="dw-method-title" style="margin:0 0 1rem;font-size:clamp(1.8rem,3.5vw,2.6rem)">Four strata from question to checklist</h2>
+    <div class="dw-strata">
+      <div class="dw-stratum"><strong>Layer A</strong><h3>Name the room</h3><p>Stairs, sofa, bed or coat — pick the surface you actually live with.</p></div>
+      <div class="dw-stratum"><strong>Layer B</strong><h3>Read a sourced note</h3><p>Guides keep VCA/AKC links in view; we do not invent percentages.</p></div>
+      <div class="dw-stratum"><strong>Layer C</strong><h3>Use a tool</h3><p>Ramp length, coat fit, or the new back-safety audit with print.</p></div>
+      <div class="dw-stratum"><strong>Layer D</strong><h3>Change one habit</h3><p>Gate, traction, ramp training — one priority at a time.</p></div>
+    </div>
+    <div class="dw-close">
+      <p class="dw-kicker" style="color:var(--dw-sand)">05 · CLOSE THE GAPS</p>
+      <h2>Print a home audit before you buy more gear.</h2>
+      <p>Answer eight room questions. Get high / next / later priorities for stairs, ramps, sofa jumps and floors.</p>
+      <a class="dw-btn" href="/dachshund-back-safety-audit.html" data-dw-from="home_finish"><span>Open the back-safety audit</span></a>
+    </div>
+  </section>
+</main>
+<footer class="dw-foot">
+  <div class="dw-shell">
+    <div class="dw-foot-cta">
+      <div>
+        <p class="dw-kicker">CLOSE THE TUNNEL GAPS</p>
+        <h2>Walk your rooms once. Fix the highest jumps first.</h2>
+        <p>A printable home audit for stairs, ramps, sofa leaps and slippery landings — built for long, low dogs.</p>
+      </div>
+      <a class="dw-btn" href="/dachshund-back-safety-audit.html" data-dw-from="footer">Run the audit</a>
+    </div>
+    <nav class="dw-foot-nav" aria-label="Footer">
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/editorial-policy.html">Publishing standards</a>
+      <a href="/disclosure.html">Funding disclosure</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/sitemap.html">Sitemap</a>
+    </nav>
+    <p class="dw-ai">Dachshund World is AI-assisted. Facts are checked against the linked sources; this site does not invent breed statistics.</p>
+    <small>© 2026 Dachshund World · Teckel field manual redesign · Instrument Serif + Karla (OFL)</small>
+  </div>
+</footer>
+<button type="button" class="dw-settings" id="seo-analytics-settings" hidden>Analytics preferences</button>
+<p id="seo-analytics-status" role="status"></p>
+<section class="dw-consent" id="seo-analytics-panel" aria-labelledby="seo-analytics-title" hidden>
+  <h2 id="seo-analytics-title">Optional analytics</h2>
+  <p>Allow Google Analytics to measure page visits and use of the back-safety audit? The audit works either way.</p>
+  <div class="dw-actions">
+    <button type="button" class="dw-btn dw-decline" data-analytics-choice="denied">Decline</button>
+    <button type="button" class="dw-btn" data-analytics-choice="granted">Allow</button>
+  </div>
+</section>
+<script defer src="/assets/dw-config.js"></script>
+<script defer src="/assets/dw-analytics.js"></script>
+<script defer src="/assets/dw-site.js"></script>
 </body>
 </html>

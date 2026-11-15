@@ -1,0 +1,279 @@
+/* Burrow / Teckel field manual — dachshund-world (dw-) */
+@font-face{font-family:"Instrument Serif";src:url("/assets/fonts/InstrumentSerif-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("/assets/fonts/InstrumentSerif-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Karla";src:url("/assets/fonts/Karla-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("/assets/fonts/Karla-SemiBold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("/assets/fonts/Karla-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+:root{
+  --dw-loam:#2A2722;--dw-sand:#D8C7A4;--dw-moss:#7F8F5A;--dw-bone:#F4EFE4;--dw-clay:#B4552D;
+  --dw-humus:#3F3A32;--dw-ink:#2A2722;--dw-muted:#5C564C;--dw-line:#C9B896;
+  --dw-display:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --dw-body:"Karla",Tahoma,Geneva,sans-serif;
+  --dw-shell:min(1180px,calc(100% - 2.5rem));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.dw-burrow-site{
+  margin:0;background:var(--dw-bone);color:var(--dw-ink);
+  font:400 1.05rem/1.7 var(--dw-body);
+}
+body.dw-burrow-site :where(h1,h2,h3,h4){font-family:var(--dw-display);font-weight:400;line-height:1.12;letter-spacing:-.02em;color:var(--dw-loam)}
+body.dw-burrow-site a{color:#0066cc;text-underline-offset:.18em}
+body.dw-burrow-site a:hover{text-decoration:underline}
+body.dw-burrow-site :focus-visible{outline:3px solid var(--dw-clay);outline-offset:3px}
+.dw-shell{width:var(--dw-shell);margin-inline:auto}
+.dw-kicker{margin:0 0 .75rem;font:700 .72rem/1.4 var(--dw-body);letter-spacing:.16em;text-transform:uppercase;color:var(--dw-moss)}
+.dw-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:48px;padding:.75rem 1.15rem;border:0;border-radius:0;
+  background:var(--dw-clay);color:var(--dw-bone)!important;text-decoration:none!important;
+  font:700 .92rem/1.2 var(--dw-body);cursor:pointer;transform:skewX(-6deg);
+}
+.dw-btn > *{transform:skewX(6deg)}
+.dw-btn:hover{filter:brightness(1.05);text-decoration:none}
+.dw-text{font:700 .9rem/1.4 var(--dw-body);color:var(--dw-clay)!important;text-decoration:underline!important}
+.dw-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+
+/* Unique #1: horizontal burrow soil strip under masthead */
+.dw-mast{position:sticky;top:0;z-index:80;background:var(--dw-bone);border-bottom:1px solid var(--dw-line)}
+.dw-burrow{display:grid;grid-template-rows:7px 9px 11px 8px;position:relative}
+.dw-layer{display:block;width:100%}
+.dw-humus{background:#1c1916}
+.dw-loam{background:var(--dw-loam)}
+.dw-sand{background:var(--dw-sand)}
+.dw-clay{background:var(--dw-moss)}
+.dw-tunnel{
+  position:absolute;left:18%;bottom:0;width:92px;height:22px;
+  background:radial-gradient(ellipse at center, var(--dw-bone) 0 42%, transparent 43%);
+  border-radius:50% 50% 0 0 / 100% 100% 0 0;transform:translateY(35%);
+}
+.dw-mast-row{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;min-height:4.25rem;padding:.55rem 0}
+.dw-mark{
+  position:relative;font:400 1.55rem/1 var(--dw-display);color:var(--dw-loam)!important;
+  text-decoration:none!important;transform:skewX(-8deg);letter-spacing:-.03em;
+}
+.dw-mark em{font-style:italic;color:var(--dw-clay)}
+.dw-bone{
+  display:inline-block;width:1.1rem;height:.38rem;margin-left:.35rem;
+  background:var(--dw-sand);border-radius:999px;box-shadow:-.35rem 0 0 var(--dw-sand),.35rem 0 0 var(--dw-sand);
+  vertical-align:middle;transform:skewX(8deg) rotate(-12deg);
+}
+.dw-nav{display:flex;align-items:center;gap:1.1rem;font:600 .92rem/1 var(--dw-body)}
+.dw-nav a{color:var(--dw-loam)!important;text-decoration:none!important;min-height:44px;display:inline-flex;align-items:center}
+.dw-nav a:hover{color:var(--dw-clay)!important}
+.dw-nav-cta{
+  padding:.45rem .85rem!important;background:var(--dw-loam);color:var(--dw-bone)!important;
+  transform:skewX(-6deg);
+}
+.dw-menu{display:none;position:static}
+.dw-menu summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;font:700 .9rem var(--dw-body);color:var(--dw-loam)}
+.dw-menu summary::-webkit-details-marker{display:none}
+.dw-menu[open] .dw-menu-open,.dw-menu:not([open]) .dw-menu-close{display:none}
+.dw-menu-panel{
+  position:absolute;left:0;right:0;background:var(--dw-sand);border-bottom:4px solid var(--dw-loam);
+  padding:1.5rem max(1rem,calc((100vw - 1180px)/2));
+}
+.dw-menu-panel nav{display:grid}
+.dw-menu-panel nav a{
+  font:400 1.7rem/1.15 var(--dw-display);padding:.85rem 0;border-bottom:1px dashed var(--dw-loam);
+  color:var(--dw-loam)!important;text-decoration:none!important;
+}
+.dw-menu-small{display:flex;gap:1.25rem;margin-top:1rem;font:600 .9rem var(--dw-body)}
+
+/* Home hero: soil cross-section */
+.dw-hero{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem;align-items:center;
+  padding:3.2rem 0 2.8rem;
+}
+.dw-hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:0 0 1rem;max-width:14ch}
+.dw-hero h1 span{display:block;font-style:italic;color:var(--dw-clay)}
+.dw-lead{margin:0 0 1.4rem;max-width:38ch;color:var(--dw-muted);font-size:1.08rem}
+.dw-cutaway{
+  position:relative;min-height:280px;border:1px solid var(--dw-line);background:
+    linear-gradient(#5a6b3c 0 18%, #7F8F5A 18% 34%, #D8C7A4 34% 58%, #8a6a3d 58% 78%, #2A2722 78% 100%);
+  overflow:hidden;
+}
+.dw-cutaway::before{
+  content:"";position:absolute;left:12%;right:18%;top:34%;height:42%;
+  background:var(--dw-bone);border-radius:999px 999px 40% 40% / 70% 70% 40% 40%;
+  box-shadow:inset 0 0 0 3px rgba(42,39,34,.18);
+}
+.dw-cutaway-caption{
+  position:absolute;left:1rem;right:1rem;bottom:.7rem;margin:0;
+  font:600 .72rem/1.35 var(--dw-body);letter-spacing:.08em;text-transform:uppercase;color:var(--dw-bone);
+  text-shadow:0 1px 2px rgba(0,0,0,.35);
+}
+.dw-cutaway img{position:absolute;right:8%;bottom:10%;width:42%;max-width:220px;height:auto;border:3px solid var(--dw-bone);transform:rotate(-3deg);box-shadow:6px 8px 0 rgba(42,39,34,.25)}
+
+/* Unique #2: tunnel-portal path cards */
+.dw-paths{padding:1rem 0 3rem}
+.dw-path-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.dw-portal{
+  position:relative;padding:1.5rem 1.25rem 1.35rem;background:var(--dw-sand);
+  clip-path:polygon(0 12%, 12% 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
+  border:0;
+}
+.dw-portal::before{
+  content:"";position:absolute;top:-18px;left:1.1rem;width:54px;height:54px;border-radius:50%;
+  background:radial-gradient(circle at 50% 55%, var(--dw-bone) 0 38%, var(--dw-moss) 39% 62%, var(--dw-loam) 63%);
+  box-shadow:0 0 0 4px var(--dw-sand);
+}
+.dw-portal h2{margin:1.6rem 0 .6rem;font-size:1.65rem}
+.dw-portal p{margin:0 0 1rem;color:var(--dw-muted);font-size:.95rem}
+
+/* Unique #3: soil-core fact cylinders */
+.dw-cores{padding:2.5rem 0;background:linear-gradient(180deg,transparent,rgba(127,143,90,.12),transparent)}
+.dw-core-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.dw-core{
+  display:flex;flex-direction:column;justify-content:flex-end;min-height:250px;
+  border-radius:999px 999px 12px 12px;overflow:hidden;border:1px solid var(--dw-line);background:var(--dw-loam);color:var(--dw-bone);
+  text-align:center;padding:0;
+}
+.dw-core-band{padding:.85rem .7rem;font:600 .78rem/1.35 var(--dw-body)}
+.dw-core-band:nth-child(1){background:#1c1916}
+.dw-core-band:nth-child(2){background:var(--dw-moss);flex:1;display:flex;flex-direction:column;justify-content:center;font:400 1.7rem/1.15 var(--dw-display);padding:1.2rem .8rem}
+.dw-core-band:nth-child(3){background:var(--dw-sand);color:var(--dw-loam)}
+.dw-core cite{font-style:normal;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;opacity:.85}
+
+/* Dig-trail latest entries */
+.dw-trail{padding:2.5rem 0 1rem}
+.dw-trail-list{display:grid;gap:0}
+.dw-dig{
+  display:grid;grid-template-columns:7rem 1fr auto;gap:1rem;align-items:center;
+  padding:1.1rem 0;border-top:1px dashed var(--dw-line);text-decoration:none!important;color:inherit!important;
+}
+.dw-dig:hover .dw-dig-title{color:var(--dw-clay)}
+.dw-dig-date{font:700 .72rem/1.2 var(--dw-body);letter-spacing:.12em;text-transform:uppercase;color:var(--dw-moss)}
+.dw-dig-title{margin:0;font:400 1.35rem/1.2 var(--dw-display);color:var(--dw-loam)}
+.dw-dig-blurb{margin:.25rem 0 0;color:var(--dw-muted);font-size:.92rem}
+.dw-dig-arrow{font:700 1.2rem var(--dw-body);color:var(--dw-clay);transform:skewX(-12deg)}
+
+.dw-method{padding:2.5rem 0}
+.dw-strata{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--dw-line)}
+.dw-stratum{padding:1.25rem 1rem;border-right:1px solid var(--dw-line);background:var(--dw-bone)}
+.dw-stratum:last-child{border-right:0}
+.dw-stratum:nth-child(1){background:#efe8d8}
+.dw-stratum:nth-child(2){background:#e4d7b8}
+.dw-stratum:nth-child(3){background:#d5c49a}
+.dw-stratum:nth-child(4){background:#c7b384}
+.dw-stratum strong{display:block;font:700 .72rem/1.3 var(--dw-body);letter-spacing:.14em;text-transform:uppercase;color:var(--dw-clay);margin-bottom:.55rem}
+.dw-stratum h3{margin:0 0 .45rem;font-size:1.35rem}
+.dw-stratum p{margin:0;font-size:.9rem;color:var(--dw-muted)}
+
+.dw-close{
+  margin:2rem 0 0;padding:2.4rem 1.5rem;background:var(--dw-loam);color:var(--dw-bone);
+  clip-path:polygon(0 0,100% 0,100% 86%,94% 100%,0 100%);
+}
+.dw-close h2{color:var(--dw-bone);margin:0 0 .75rem;font-size:clamp(1.8rem,4vw,2.8rem)}
+.dw-close p{margin:0 0 1.2rem;max-width:42ch;color:var(--dw-sand)}
+.dw-close .dw-btn{background:var(--dw-clay)}
+
+.dw-foot{margin-top:3rem;background:var(--dw-humus);color:var(--dw-sand);padding:2.5rem 0 2rem}
+.dw-foot-cta{display:flex;justify-content:space-between;gap:1.5rem;align-items:end;margin-bottom:1.75rem;flex-wrap:wrap}
+.dw-foot-cta h2{color:var(--dw-bone);margin:.2rem 0 .6rem;font-size:clamp(1.6rem,3.5vw,2.4rem);max-width:18ch}
+.dw-foot-cta p{margin:0;max-width:36ch;color:var(--dw-sand)}
+.dw-foot-nav{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;margin-bottom:1rem}
+.dw-foot-nav a{color:var(--dw-bone)!important;text-decoration:none!important;font:600 .88rem var(--dw-body)}
+.dw-ai{font-size:.85rem;color:rgba(216,199,164,.85);max-width:70ch}
+.dw-foot small{display:block;margin-top:.8rem;opacity:.7}
+.dw-consent{position:fixed;inset:auto 1rem 1rem 1rem;max-width:420px;margin-left:auto;background:var(--dw-bone);border:2px solid var(--dw-loam);padding:1.2rem;z-index:120;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.dw-settings{display:block;margin:0 auto 1rem;background:transparent;border:1px solid var(--dw-sand);color:var(--dw-sand);padding:.4rem .7rem;cursor:pointer}
+
+/* Article template */
+.dw-rail{
+  display:flex;align-items:center;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--dw-line);
+}
+.dw-rail img{width:72px;height:72px;object-fit:cover;border-radius:50%;border:3px solid var(--dw-sand);box-shadow:3px 3px 0 var(--dw-moss)}
+.dw-rail-meta{font-size:.88rem;color:var(--dw-muted)}
+.dw-article-wrap{
+  display:grid;grid-template-columns:150px minmax(0,1fr) 280px;gap:2rem;padding:1.75rem 0 3rem;align-items:start;
+}
+/* Unique TOC: soil-core sample */
+.dw-toc{
+  position:sticky;top:6.5rem;padding:0;border-radius:999px 999px 14px 14px;overflow:hidden;
+  border:1px solid var(--dw-line);background:var(--dw-loam);color:var(--dw-bone);
+}
+.dw-toc p{margin:0;padding:.7rem .55rem;font:700 .65rem/1.3 var(--dw-body);letter-spacing:.12em;text-transform:uppercase;background:#1c1916;text-align:center}
+.dw-toc ol{list-style:none;margin:0;padding:0}
+.dw-toc li{border-top:1px solid rgba(244,239,228,.15)}
+.dw-toc a{
+  display:block;padding:.7rem .55rem;color:var(--dw-bone)!important;text-decoration:none!important;
+  font:600 .72rem/1.35 var(--dw-body);text-align:center;
+}
+.dw-toc li:nth-child(odd) a{background:rgba(127,143,90,.35)}
+.dw-toc li:nth-child(even) a{background:rgba(180,85,45,.28)}
+.dw-toc a:hover{background:var(--dw-clay)!important}
+.dw-article{min-width:0}
+.dw-crumbs{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font-size:.85rem;color:var(--dw-muted);margin:0 0 1rem}
+.dw-crumbs a{color:var(--dw-muted)!important}
+.dw-article h1{font-size:clamp(2rem,4.5vw,3.1rem);margin:0 0 1rem}
+.dw-article .dw-lead{margin-bottom:1.25rem}
+.dw-stat{
+  display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;
+  margin:1.4rem 0;padding:1rem 1.1rem;background:var(--dw-sand);
+  clip-path:polygon(0 0,100% 8%,100% 100%,0 92%);
+}
+.dw-stat strong{font:400 2.4rem/1 var(--dw-display);color:var(--dw-clay)}
+.dw-pull{
+  margin:1.6rem 0;padding:1.1rem 1.3rem;border-left:0;background:transparent;
+  font:italic 1.45rem/1.35 var(--dw-display);color:var(--dw-loam);
+  transform:skewX(-4deg);border-bottom:4px solid var(--dw-moss);
+}
+.dw-side{position:sticky;top:6.5rem;display:grid;gap:1rem}
+.dw-side-card{background:var(--dw-sand);padding:1.2rem;border-top:6px solid var(--dw-clay)}
+.dw-side-card h2,.dw-side-card h3{margin:0 0 .6rem;font-size:1.35rem}
+.dw-side-card p{margin:0 0 1rem;font-size:.9rem;color:var(--dw-muted)}
+.dw-side-links{background:var(--dw-bone);border:1px solid var(--dw-line);padding:1rem}
+.dw-side-links h3{margin:0 0 .7rem;font-size:1.1rem}
+.dw-side-links ul{margin:0;padding:0;list-style:none}
+.dw-side-links li{padding:.4rem 0;border-bottom:1px dashed var(--dw-line);font-size:.9rem}
+.dw-faq details{border:1px solid var(--dw-line);margin:0 0 .6rem;background:#fffdf8}
+.dw-faq summary{cursor:pointer;padding:.85rem 1rem;font-weight:700;color:var(--dw-loam)}
+.dw-faq details[open] summary{border-bottom:1px solid var(--dw-line);background:rgba(127,143,90,.12)}
+.dw-faq .dw-ans{padding:.85rem 1rem;color:var(--dw-muted)}
+.dw-sources{font-size:.92rem}
+.dw-sources li{margin-bottom:.4rem}
+.dw-ai-note{margin:1.5rem 0 0;padding:1rem;border-left:5px solid var(--dw-moss);background:rgba(216,199,164,.35);font-size:.9rem;color:var(--dw-muted)}
+
+/* Audit tool */
+.dw-audit-hero{padding:2.4rem 0 1.2rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:end}
+.dw-audit-panel{background:var(--dw-sand);padding:1.4rem;border:1px solid var(--dw-line)}
+.dw-zones{display:grid;gap:1rem;margin:1.5rem 0}
+.dw-zone{border:1px solid var(--dw-line);background:#fffdf8;padding:1.1rem}
+.dw-zone h3{margin:0 0 .7rem;font-size:1.4rem}
+.dw-zone label{display:flex;gap:.65rem;align-items:flex-start;margin:.45rem 0;font-size:.95rem}
+.dw-zone input{margin-top:.25rem;accent-color:var(--dw-clay)}
+.dw-result{margin:1.5rem 0;padding:1.3rem;background:var(--dw-loam);color:var(--dw-bone)}
+.dw-result h2{color:var(--dw-bone);margin:0 0 .8rem}
+.dw-prio{list-style:none;margin:0;padding:0;display:grid;gap:.65rem}
+.dw-prio li{display:grid;grid-template-columns:auto 1fr;gap:.75rem;padding:.75rem;background:rgba(244,239,228,.08);border-left:5px solid var(--dw-clay)}
+.dw-prio .dw-tag{font:700 .68rem/1 var(--dw-body);letter-spacing:.1em;text-transform:uppercase;padding:.35rem .45rem;background:var(--dw-clay);align-self:start}
+.dw-prio .dw-tag.mid{background:var(--dw-moss)}
+.dw-prio .dw-tag.low{background:var(--dw-sand);color:var(--dw-loam)}
+.dw-print-bar{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+@media print{
+  .dw-mast,.dw-foot,.dw-menu,.dw-print-bar,.dw-consent,#seo-analytics-settings,.dw-burrow{display:none!important}
+  .dw-result{break-inside:avoid}
+  body{background:#fff}
+}
+
+@media(max-width:980px){
+  .dw-nav{display:none}
+  .dw-menu{display:block}
+  .dw-hero,.dw-audit-hero,.dw-article-wrap{grid-template-columns:1fr}
+  .dw-toc{position:static;border-radius:14px;display:grid;grid-template-columns:auto 1fr}
+  .dw-toc p{writing-mode:vertical-rl;transform:rotate(180deg);padding:.5rem}
+  .dw-toc ol{display:flex;flex-wrap:wrap}
+  .dw-toc li{flex:1 1 40%}
+  .dw-side{position:static}
+  .dw-path-grid,.dw-core-row,.dw-strata{grid-template-columns:1fr 1fr}
+  .dw-dig{grid-template-columns:5.5rem 1fr}
+  .dw-dig-arrow{display:none}
+}
+@media(max-width:640px){
+  .dw-path-grid,.dw-core-row,.dw-strata{grid-template-columns:1fr}
+  .dw-cutaway img{width:36%;right:4%}
+  .dw-hero{padding-top:2rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
