@@ -62,7 +62,7 @@ body.dw-burrow-site :focus-visible{outline:3px solid var(--dw-clay);outline-offs
 .dw-nav{display:flex;align-items:center;gap:1.1rem;font:600 .92rem/1 var(--dw-body)}
 .dw-nav a{color:var(--dw-loam)!important;text-decoration:none!important;min-height:44px;display:inline-flex;align-items:center}
 .dw-nav a:hover{color:var(--dw-clay)!important}
-.dw-nav-cta{
+.dw-nav-cta,.dw-nav .dw-nav-cta{
   padding:.45rem .85rem!important;background:var(--dw-loam);color:var(--dw-bone)!important;
   transform:skewX(-6deg);
 }
@@ -189,6 +189,7 @@ body.dw-burrow-site :focus-visible{outline:3px solid var(--dw-clay);outline-offs
 .dw-article-wrap{
   display:grid;grid-template-columns:150px minmax(0,1fr) 280px;gap:2rem;padding:1.75rem 0 3rem;align-items:start;
 }
+.dw-article-wrap--solo{grid-template-columns:minmax(0,1fr) 280px}
 /* Unique TOC: soil-core sample */
 .dw-toc{
   position:sticky;top:6.5rem;padding:0;border-radius:999px 999px 14px 14px;overflow:hidden;
@@ -261,7 +262,7 @@ body.dw-burrow-site :focus-visible{outline:3px solid var(--dw-clay);outline-offs
 @media(max-width:980px){
   .dw-nav{display:none}
   .dw-menu{display:block}
-  .dw-hero,.dw-audit-hero,.dw-article-wrap{grid-template-columns:1fr}
+  .dw-hero,.dw-audit-hero,.dw-article-wrap,.dw-article-wrap--solo{grid-template-columns:1fr}
   .dw-toc{position:static;border-radius:14px;display:grid;grid-template-columns:auto 1fr}
   .dw-toc p{writing-mode:vertical-rl;transform:rotate(180deg);padding:.5rem}
   .dw-toc ol{display:flex;flex-wrap:wrap}
@@ -277,3 +278,15 @@ body.dw-burrow-site :focus-visible{outline:3px solid var(--dw-clay);outline-offs
   .dw-hero{padding-top:2rem}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* Legacy article content guards (rollout 2026-11-15) */
+.dw-table{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.dw-table table{margin:0}
+.dw-article p,.dw-article li,.dw-article td,.dw-article th{overflow-wrap:anywhere}
+.dw-article table{max-width:100%}
+.dw-article .dw-faq,.dw-article .tip,.dw-article .dw-stat,.dw-article .dw-zone{max-width:100%}
+@media(max-width:640px){
+  .dw-article table{min-width:100%}
+  .dw-article iframe,.dw-article video,.dw-article img{max-width:100%;height:auto}
+  .dw-article pre{overflow-x:auto;max-width:100%}
+}
