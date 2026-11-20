@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dachshund Energy Level: How Much Exercise Do They Really Need?</title>
-<meta name="description" content="How energetic are dachshunds? Learn how much exercise your dachshund needs by age, the best activities, and how to spot the signs you&#x27;re doing too little …">
+<title>Are Dachshunds High Energy? Exercise Needs by Age and Size</title>
+<meta name="description" content="Yes — dachshunds are more energetic than their size suggests: 30–60 minutes a day for adults, short play for puppies, and how to tell if yours needs more.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://dachshund-world.github.io/dachshund-energy-level.html">
 <link rel="stylesheet" href="/assets/dw-burrow.css">
@@ -95,10 +95,10 @@
  ]
 }</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "How Much Exercise Does a Dachshund Need?", "description": "Fenrir Canine Leaders, a training channel focused on dachshunds, talks through how much exercise the breed needs and why it matters for this energetic hunting dog.", "thumbnailUrl": "https://i.ytimg.com/vi/qoLr8r7A3es/hqdefault.jpg", "uploadDate": "2020-12-21T00:00:00+00:00", "embedUrl": "https://www.youtube-nocookie.com/embed/qoLr8r7A3es"}</script>
-<meta property="og:title" content="Dachshund Energy Level: How Much Exercise Do They Really Need?">
+<meta property="og:title" content="Are Dachshunds High Energy? Exercise Needs by Age and Size">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://dachshund-world.github.io/dachshund-energy-level.html">
-<meta property="og:description" content="How energetic are dachshunds? Learn how much exercise your dachshund needs by age, the best activities, and how to spot the signs you&#x27;re doing too little …">
+<meta property="og:description" content="Yes — dachshunds are more energetic than their size suggests: 30–60 minutes a day for adults, short play for puppies, and how to tell if yours needs more.">
 <meta property="og:image" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
 <meta property="og:image:secure_url" content="https://dachshund-world.github.io/assets/social-share-20261025.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -174,7 +174,7 @@
       </div>
     </div>
     <h1>Dachshund Energy Level: How Much Exercise Do They Really Need?</h1>
-    <p class="dw-lead">Dachshunds were built to hunt badgers for hours — they have more stamina than their short legs suggest. Here's exactly how much exercise your sausage dog needs, by age and size.</p>
+    <p class="dw-lead">Yes — dachshunds are high-energy dogs in a small body. Bred to work underground for hours, they have more stamina than their short legs suggest; most adults need 30–60 minutes of activity a day, puppies far less.</p>
 
 
       <div class="dw-stat">
@@ -182,6 +182,43 @@
         <p>Adult dachshunds need <strong>30–60 minutes of exercise per day</strong>, split across two walks. Puppies need short 5–10 minute play sessions only. Despite their size, dachshunds have genuine stamina — bred to track badgers underground for hours. Under-exercise is one of the most common reasons owners report problem behaviour.</p>
       </div>
 
+
+      <div class="dw-stat" id="energy-planner">
+        <strong>Daily exercise planner</strong>
+        <p>Pick your dachshund's age and size for a starting point. It is a range, not a prescription — watch your dog, not the clock.</p>
+        <p><label for="ep-age">Age</label>
+        <select id="ep-age">
+          <option value="puppy">Under 6 months</option>
+          <option value="young" selected>6–18 months</option>
+          <option value="adult">Adult (1–7 years)</option>
+          <option value="senior">Senior (8+)</option>
+        </select>
+        <label for="ep-size">Size</label>
+        <select id="ep-size">
+          <option value="mini" selected>Miniature</option>
+          <option value="standard">Standard</option>
+        </select>
+        <button type="button" id="ep-run">Show my daily target</button></p>
+        <p><output id="ep-out" for="ep-age ep-size">30–45 minutes, split across two walks.</output></p>
+      </div>
+      <script>
+      (function () {
+        var plan = {
+          puppy:  { mini: "Two or three short play sessions of 5–10 minutes; no forced walking distance.",
+                    standard: "Three short play sessions of 5–10 minutes; keep it free and stop before the puppy tires." },
+          young:  { mini: "30–45 minutes, split across two walks, plus a sniffing game at home.",
+                    standard: "45–60 minutes, split across two walks, plus a short training session." },
+          adult:  { mini: "30–45 minutes, split across two walks, plus one enrichment puzzle.",
+                    standard: "45–60 minutes, split across two walks, plus a sniffing or digging game." },
+          senior: { mini: "20–30 minutes of gentle walking, split into two or three short outings.",
+                    standard: "25–35 minutes of gentle walking, split into two or three short outings." }
+        };
+        var age = document.getElementById("ep-age"), size = document.getElementById("ep-size"),
+            out = document.getElementById("ep-out"), run = document.getElementById("ep-run");
+        function show() { out.textContent = plan[age.value][size.value]; }
+        run.addEventListener("click", show); age.addEventListener("change", show); size.addEventListener("change", show);
+      })();
+      </script>
       <h2 id="how-energetic-are-dachshunds">How energetic are dachshunds?</h2>
       <p>Dachshunds sit in the <strong>moderate-to-high energy</strong> category for small breeds. That surprises a lot of first-time owners who expect a lap dog and get a restless, digging, sniffing machine instead. The reason is simple: dachshunds are hounds, not companion breeds. They were selectively bred for centuries to chase badgers into underground tunnels — a job that demands determination, stamina, and a stubborn refusal to quit.</p>
 <p>Fenrir Canine Leaders, a training channel focused on dachshunds, talks through how much exercise the breed needs and why it matters for this energetic hunting dog.</p>
