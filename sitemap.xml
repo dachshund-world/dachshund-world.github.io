@@ -3,12 +3,12 @@
   <url><loc>https://dachshund-world.github.io/</loc><lastmod>2026-11-15</lastmod><priority>1.0</priority></url>
   <url><loc>https://dachshund-world.github.io/blog.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
   <url><loc>https://dachshund-world.github.io/care.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://dachshund-world.github.io/about.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://dachshund-world.github.io/contact.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://dachshund-world.github.io/privacy.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://dachshund-world.github.io/editorial-policy.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://dachshund-world.github.io/disclosure.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://dachshund-world.github.io/sitemap.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
+  <url><loc>https://dachshund-world.github.io/about.html</loc><lastmod>2026-10-04</lastmod><priority>0.5</priority></url>
+  <url><loc>https://dachshund-world.github.io/contact.html</loc><lastmod>2026-10-03</lastmod><priority>0.5</priority></url>
+  <url><loc>https://dachshund-world.github.io/privacy.html</loc><lastmod>2026-10-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://dachshund-world.github.io/editorial-policy.html</loc><lastmod>2026-10-04</lastmod><priority>0.5</priority></url>
+  <url><loc>https://dachshund-world.github.io/disclosure.html</loc><lastmod>2026-10-03</lastmod><priority>0.5</priority></url>
+  <url><loc>https://dachshund-world.github.io/sitemap.html</loc><lastmod>2026-10-05</lastmod><priority>0.5</priority></url>
   <url><loc>https://dachshund-world.github.io/dachshund-energy-level.html</loc><lastmod>2026-06-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://dachshund-world.github.io/dachshund-separation-anxiety-bedtime-crate.html</loc><lastmod>2026-06-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://dachshund-world.github.io/dachshund-puppy-crate-training-wont-sleep.html</loc><lastmod>2026-05-27</lastmod><priority>0.8</priority></url>
@@ -76,5 +76,10 @@
     <loc>https://dachshund-world.github.io/dachshund-back-safety-audit.html</loc>
     <lastmod>2026-11-15</lastmod>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dachshund-world.github.io/dachshund-crate-size.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
